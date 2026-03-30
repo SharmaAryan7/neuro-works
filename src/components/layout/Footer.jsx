@@ -33,16 +33,15 @@ export default function Footer() {
             <div className="text-slate-900 font-bold mb-4">Company</div>
             <ul className="space-y-3">
               <li><Link className="hover:text-[#4647d3] transition-colors" to="/about">About Us</Link></li>
-              <li><Link className="hover:text-[#4647d3] transition-colors" to="#">Careers</Link></li>
-              <li><Link className="hover:text-[#4647d3] transition-colors" to="#">Contact</Link></li>
+              <li><Link className="hover:text-[#4647d3] transition-colors" to="/contact">Contact</Link></li>
             </ul>
           </div>
           <div>
             <div className="text-slate-900 font-bold mb-4">Support</div>
             <ul className="space-y-3">
-              <li><Link className="hover:text-[#4647d3] transition-colors" to="#">FAQ</Link></li>
-              <li><Link className="hover:text-[#4647d3] transition-colors" to="#">Privacy Policy</Link></li>
-              <li><Link className="hover:text-[#4647d3] transition-colors" to="#">Terms</Link></li>
+              <li><Link className="hover:text-[#4647d3] transition-colors" to="/faq">FAQ</Link></li>
+              <li><Link className="hover:text-[#4647d3] transition-colors" to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link className="hover:text-[#4647d3] transition-colors" to="/terms">Terms</Link></li>
             </ul>
           </div>
           <div className="col-span-2 md:col-span-4 lg:col-span-6 border-t border-slate-200 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -90,9 +89,9 @@ export default function Footer() {
               <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="/services">Services</Link>
               <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="/work">Work</Link>
               <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="/insights">Insights</Link>
-              <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="#">FAQ</Link>
-              <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="#">Privacy Policy</Link>
-              <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="#">Terms</Link>
+              <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="/#faq">FAQ</Link>
+              <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="/privacy-policy">Privacy Policy</Link>
+              <Link className="text-slate-500 hover:text-[#4647d3] transition-colors font-medium text-sm font-body hover:underline decoration-[#4647d3]/30 underline-offset-4" to="/terms">Terms</Link>
             </>
           )}
 

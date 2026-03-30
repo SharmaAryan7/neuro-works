@@ -186,6 +186,27 @@ export default function CaseStudy() {
             </div>
           </div>
         </section>
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Want Similar Results for Your Business?</h2>
+            <p className="text-lg text-inverse-on-surface/80">
+                et’s build systems that deliver real impact. Our team is ready to help you orchestrate your AI journey.
+            </p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+                Book a Call
+              </button>
+            </div>
+          </div>
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+        </div>
+      </section>
+
       </div>
     </div>
   );

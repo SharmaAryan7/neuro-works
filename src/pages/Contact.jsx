@@ -154,26 +154,26 @@ export default function Contact() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-24 px-8">
-          <div style={primaryGradient} className="max-w-7xl mx-auto rounded-[3rem] p-12 md:p-24 relative overflow-hidden text-center space-y-8">
-            <div className="absolute inset-0 opacity-10">
-              <img 
-                alt="abstract digital waves and geometric patterns" 
-                className="w-full h-full object-cover" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVuZSm_Bx0eO5YTu1H-6pEQWoTmiZ499wHK9sub0fMm0qOkjnj9GrR0snrgFOZGKYrnOH_pOyJJiuTNQUU6szkDGGwdnPjIQNeH542JOclzaTTd4Jx318WOmRFIS2qj8w3oFXtmhaCmzWjZLfrV3BO9H8YMamsQZ-o88ZFCF3fBHHAB2OCgov5armWLl86DLHUwA63FSXr9OPXqOPjuAMyd1e3_QILJvpOTYY_h-FVpgYmAW7Kp7jwXEiQr-Fo3Ta9c56QVFLtyh8q"
-              />
-            </div>
-            <div className="relative z-10 space-y-8">
-              <h2 className="text-4xl md:text-6xl font-bold text-white font-headline tracking-tight">Let’s Build Your Next Project</h2>
-              <p className="text-white/80 text-lg max-w-xl mx-auto">
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Let’s Build Your Next Project</h2>
+            <p className="text-lg text-inverse-on-surface/80">
                 Join the ranks of innovative companies leveraging Neuro Works AI to transform their digital landscape.
-              </p>
-              <button className="bg-white text-[#4647d3] px-12 py-5 rounded-full font-bold text-lg hover:shadow-2xl transition-shadow scale-100 hover:scale-105 active:scale-95 duration-300">
+            </p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
                 Book a Call
               </button>
             </div>
           </div>
-        </section>
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+        </div>
+      </section>
 
       </div>
     </div>

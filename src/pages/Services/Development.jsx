@@ -201,26 +201,24 @@ export default function Development() {
         </section>
 
         {/* CTA Section */}
-        <section className="px-8 py-24 max-w-7xl mx-auto">
-          <div className="bg-gradient-to-br from-[#4647d3] to-[#6a37d4] rounded-[3rem] p-12 lg:p-24 text-center text-white relative overflow-hidden shadow-2xl shadow-[#4647d3]/20">
-            <div className="absolute inset-0 opacity-10 pointer-events-none">
-              <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="currentColor"></path>
-              </svg>
-            </div>
-            <div className="relative z-10 max-w-3xl mx-auto space-y-8">
-              <h2 className="font-headline text-4xl lg:text-6xl font-bold tracking-tight">Ready to Build Your Next Product?</h2>
-              <p className="text-lg lg:text-xl text-white/80 leading-relaxed">
-                Let’s create scalable digital solutions tailored to your needs. Our team is ready to bring your vision to life.
-              </p>
-              <div className="pt-8">
-                <button className="px-10 py-5 bg-white text-[#4647d3] rounded-full font-bold text-lg transition-all hover:shadow-2xl hover:scale-105">
-                  Book a Call
-                </button>
-              </div>
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Ready to Build Your Next Product?</h2>
+            <p className="text-lg text-inverse-on-surface/80">Let’s create scalable digital solutions tailored to your needs. Our team is ready to bring your vision to life.</p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+                Book a Call
+              </button>
             </div>
           </div>
-        </section>
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+        </div>
+      </section>
       </div>
     </div>
   );

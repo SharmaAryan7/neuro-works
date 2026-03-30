@@ -114,26 +114,26 @@ export default function About() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-24 px-6">
-          <div className="max-w-7xl mx-auto">
-            <div style={gradientBg} className="relative overflow-hidden rounded-[2.5rem] py-20 px-8 text-center shadow-2xl">
-              <div className="absolute inset-0 bg-white/10 backdrop-blur-[2px]"></div>
-              <div className="relative z-10 max-w-3xl mx-auto">
-                <h2 className="font-headline text-4xl md:text-5xl font-bold text-white mb-6">Let’s Build Something Great Together</h2>
-                <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">
-                  Join the ranks of forward-thinking enterprises that have redefined their industry with our intelligent systems.
-                </p>
-                <button className="bg-white text-[#4647d3] px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all">
-                  Book a Call
-                </button>
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-              <div className="absolute -top-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Let’s Build Something Great Together</h2>
+            <p className="text-lg text-inverse-on-surface/80">
+                Join the ranks of forward-thinking enterprises that have redefined their industry with our intelligent systems.
+            </p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+                Book a Call
+              </button>
             </div>
           </div>
-        </section>
-
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+        </div>
+      </section>
       </div>
     </div>
   );

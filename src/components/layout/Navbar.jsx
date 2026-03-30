@@ -105,12 +105,13 @@ export default function Navbar() {
         </div>
 
         {/* Universal CTA Button */}
-        <button 
+        <Link 
+          to="/contact"
           className="text-[#f4f1ff] px-6 py-2.5 rounded-full font-semibold text-sm active:scale-95 transition-transform shadow-lg shadow-[#4647d3]/20"
           style={ctaGradient}
         >
           Book a Call
-        </button>
+        </Link>
       </div>
     </nav>
   );

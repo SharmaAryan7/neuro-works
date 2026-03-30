@@ -197,21 +197,22 @@ export default function WorkOverview() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-24 max-w-7xl mx-auto px-8">
-        <div style={premiumGradient} className="rounded-[3rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
-          {/* Background Decoration */}
-          <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-black/10 rounded-full blur-3xl"></div>
-          
-          <div className="relative z-10 max-w-2xl mx-auto">
-            <h2 className="font-headline text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Have a Project in Mind?</h2>
-            <p className="font-body text-lg opacity-90 mb-10 leading-relaxed">
-              Let’s build systems that deliver real results. Our team is ready to help you navigate the future of AI and development.
-            </p>
-            <button className="bg-white text-[#4647d3] px-10 py-5 rounded-3xl font-headline font-bold text-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all">
-              Book a Call
-            </button>
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Have a Project in Mind?</h2>
+            <p className="text-lg text-inverse-on-surface/80"> Let’s build systems that deliver real results. Our team is ready to help you navigate the future of AI and development.</p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+                Book a Call
+              </button>
+            </div>
           </div>
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
         </div>
       </section>
     </div>

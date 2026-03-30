@@ -20,6 +20,8 @@ import Contact from './pages/Contact';
 import Insights from './pages/Insights';
 import BlogPost from './pages/Insights/BlogPost';
 import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
+import Terms from './pages/Legal/Terms';
+import FAQ from './pages/FAQ';
 
 // Modals
 import EntryPopup from './components/modals/EntryPopup';
@@ -57,6 +59,8 @@ export default function App() {
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/:slug" element={<BlogPost />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
         
         <EntryPopup 

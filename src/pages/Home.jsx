@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   // State to manage which FAQ is open
@@ -44,12 +45,12 @@ export default function Home() {
               We design AI-powered systems, automation, and digital products that help businesses grow efficiently. Transform your operations with the digital muse of intelligence.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="btn-gradient text-white px-8 py-4 rounded-xl font-bold text-base shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all">
+              <Link to="/services" className="inline-block btn-gradient text-white px-8 py-4 rounded-xl font-bold text-base shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all">
                 Get Started
-              </button>
-              <button className="bg-surface-container-highest text-primary px-8 py-4 rounded-xl font-bold text-base hover:bg-surface-container-high transition-colors">
+              </Link>
+              <Link to="/work" className="inline-block bg-surface-container-highest text-primary px-8 py-4 rounded-xl font-bold text-base hover:bg-surface-container-high transition-colors">
                 View Work
-              </button>
+              </Link>
             </div>
           </div>
           {/* Dashboard Mockup */}
@@ -120,61 +121,61 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-32">
+      <section className="py-32" id="expertise">
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-end mb-16">
             <div className="max-w-2xl">
               <h2 className="text-4xl font-extrabold font-headline mb-4 tracking-tight">Our Expertise</h2>
               <p className="text-on-surface-variant text-lg">We combine deep technical engineering with creative AI strategies to build tools that feel like magic.</p>
             </div>
-            <a className="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="#">
+            <Link className="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" to="/services">
               View All Services <span className="material-symbols-outlined">arrow_forward</span>
-            </a>
+            </Link>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="group p-10 rounded-xl bg-surface-container-lowest border border-outline-variant/10 shadow-sm hover:shadow-xl hover:translate-y-[-8px] transition-all duration-300">
+            <Link to="/services/ai-solutions" className="block group p-10 rounded-xl bg-surface-container-lowest border border-outline-variant/10 shadow-sm hover:shadow-xl hover:translate-y-[-8px] transition-all duration-300 text-left">
               <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-primary text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>smart_toy</span>
               </div>
-              <h3 className="text-2xl font-bold font-headline mb-4">AI Solutions</h3>
+              <h3 className="text-2xl font-bold font-headline mb-4 text-on-surface">AI Solutions</h3>
               <p className="text-on-surface-variant mb-8 line-clamp-3">Leverage the power of Large Language Models and custom agents to automate complex cognitive tasks.</p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold uppercase tracking-wider">AI Automation</span>
                 <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold uppercase tracking-wider">AI Agents</span>
                 <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold uppercase tracking-wider">Chatbots</span>
               </div>
-            </div>
+            </Link>
             {/* Card 2 */}
-            <div className="group p-10 rounded-xl bg-surface-container-lowest border border-outline-variant/10 shadow-sm hover:shadow-xl hover:translate-y-[-8px] transition-all duration-300">
+            <Link to="/services/development" className="block group p-10 rounded-xl bg-surface-container-lowest border border-outline-variant/10 shadow-sm hover:shadow-xl hover:translate-y-[-8px] transition-all duration-300 text-left">
               <div className="h-14 w-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-secondary text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>terminal</span>
               </div>
-              <h3 className="text-2xl font-bold font-headline mb-4">Development</h3>
+              <h3 className="text-2xl font-bold font-headline mb-4 text-on-surface">Development</h3>
               <p className="text-on-surface-variant mb-8 line-clamp-3">Full-stack engineering for modern SaaS platforms and digital products built with scalability in mind.</p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold uppercase tracking-wider">Web Development</span>
                 <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold uppercase tracking-wider">SaaS</span>
               </div>
-            </div>
+            </Link>
             {/* Card 3 */}
-            <div className="group p-10 rounded-xl bg-surface-container-lowest border border-outline-variant/10 shadow-sm hover:shadow-xl hover:translate-y-[-8px] transition-all duration-300">
+            <Link to="/services/growth-systems" className="block group p-10 rounded-xl bg-surface-container-lowest border border-outline-variant/10 shadow-sm hover:shadow-xl hover:translate-y-[-8px] transition-all duration-300 text-left">
               <div className="h-14 w-14 rounded-2xl bg-tertiary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-tertiary text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>rocket_launch</span>
               </div>
-              <h3 className="text-2xl font-bold font-headline mb-4">Growth Systems</h3>
+              <h3 className="text-2xl font-bold font-headline mb-4 text-on-surface">Growth Systems</h3>
               <p className="text-on-surface-variant mb-8 line-clamp-3">Custom growth engines that combine automated marketing funnels with intelligent lead qualification.</p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold uppercase tracking-wider">Marketing</span>
                 <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold uppercase tracking-wider">Funnels</span>
                 <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-bold uppercase tracking-wider">Lead Gen</span>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="mt-12 md:hidden">
-            <a className="flex items-center justify-center gap-2 text-primary font-bold py-4 rounded-xl bg-surface-container" href="#">
+            <Link className="flex items-center justify-center gap-2 text-primary font-bold py-4 rounded-xl bg-surface-container" to="/services">
               View All Services <span className="material-symbols-outlined">arrow_forward</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -222,9 +223,9 @@ export default function Home() {
               <h2 className="text-4xl font-extrabold font-headline mb-4 tracking-tight">Work</h2>
               <p className="text-on-surface-variant text-lg">Real results for real businesses through tactical AI integration.</p>
             </div>
-            <a className="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="#">
+            <Link className="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" to="/work">
               View All Work <span className="material-symbols-outlined">arrow_forward</span>
-            </a>
+            </Link>
           </div>
           <div className="grid md:grid-cols-2 gap-12">
             {/* Work 1 */}
@@ -331,7 +332,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Preview */}
-      <section className="py-32 bg-surface-container-low/30">
+      <section className="py-32 bg-surface-container-low/30" id="faq">
         <div className="max-w-3xl mx-auto px-8">
           <h2 className="text-4xl font-extrabold font-headline mb-12 text-center tracking-tight">Common Questions</h2>
           <div className="space-y-4">
@@ -363,14 +364,14 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Ready to Scale Your Business with AI?</h2>
             <p className="text-lg text-inverse-on-surface/80">Join forward-thinking companies using Neuro Works to drive intelligent growth. Let's build your future today.</p>
             <div className="pt-8">
-              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+              <Link to="/contact" className="inline-block btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
                 Book a Call
-              </button>
+              </Link>
             </div>
           </div>
           {/* Background Decorative Elements */}
-          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
-          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
         </div>
       </section>
     </>

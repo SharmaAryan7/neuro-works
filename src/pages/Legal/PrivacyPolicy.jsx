@@ -28,9 +28,6 @@ export default function PrivacyPolicy() {
   }, []);
 
   // Custom inline styles for reliable rendering
-  const primaryGradient = {
-    background: 'linear-gradient(135deg, #4647d3 0%, #6a37d4 100%)',
-  };
 
   const iconStyle = {
     fontVariationSettings: "'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24"
@@ -185,16 +182,24 @@ export default function PrivacyPolicy() {
       </main>
 
       {/* Final CTA Block */}
-      <section className="max-w-7xl mx-auto px-6 mb-32">
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-[#040e1f] p-12 md:p-24 text-center">
-          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
-          <div className="relative z-10">
-            <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-white mb-6">Have questions?</h2>
-            <p className="text-[#cdddfe]/70 text-lg mb-12 max-w-xl mx-auto">Our legal and data privacy teams are here to help you understand how we handle your digital footprints.</p>
-            <button style={primaryGradient} className="text-white px-10 py-5 rounded-full font-headline text-lg font-bold shadow-xl shadow-[#4647d3]/20 hover:scale-105 active:scale-95 transition-all">
-              Book a Call
-            </button>
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Have questions?</h2>
+            <p className="text-lg text-inverse-on-surface/80">
+                Our legal and data privacy teams are here to help you understand how we handle your digital footprints.
+            </p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+                Book a Call
+              </button>
+            </div>
           </div>
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
         </div>
       </section>
 

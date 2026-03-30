@@ -179,18 +179,24 @@ export default function GrowthSystems() {
         </section>
 
         {/* Final CTA */}
-        <section className="max-w-7xl mx-auto px-8 py-20">
-          <div style={ctaGradient} className="rounded-[2.5rem] p-12 lg:p-24 text-center text-white relative overflow-hidden shadow-2xl shadow-indigo-500/20">
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-            <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
-              <h2 className="text-4xl lg:text-6xl font-extrabold tracking-tighter font-headline">Ready to Scale Your Growth?</h2>
-              <p className="text-lg text-indigo-100/90 leading-relaxed font-body">Let’s build systems that attract, convert, and grow your business with scientific precision and creative excellence.</p>
-              <button className="bg-white text-indigo-600 px-10 py-5 rounded-xl text-lg font-extrabold hover:bg-indigo-50 active:scale-95 transition-all shadow-xl">
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Ready to Scale Your Growth?</h2>
+            <p className="text-lg text-inverse-on-surface/80">Let’s build systems that attract, convert, and grow your business with scientific precision and creative excellence.</p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
                 Book a Call
               </button>
             </div>
           </div>
-        </section>
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+        </div>
+      </section>
       </div>
     </div>
   );

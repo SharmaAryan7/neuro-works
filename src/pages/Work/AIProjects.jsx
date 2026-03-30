@@ -216,22 +216,26 @@ export default function AIProjects() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-24 px-8 bg-[#f4f6ff]">
-          <div style={bgGradientPrimary} className="max-w-5xl mx-auto rounded-[40px] p-16 md:p-24 relative overflow-hidden text-center shadow-2xl shadow-indigo-500/30">
-            {/* Decorative circle */}
-            <div className="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-[#dac9ff]/20 rounded-full blur-3xl"></div>
-            <div className="relative z-10">
-              <h2 className="text-4xl md:text-5xl font-headline font-extrabold text-white mb-8">Have a Project in Mind?</h2>
-              <p className="text-indigo-100 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-body leading-relaxed">
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Have a Project in Mind?</h2>
+            <p className="text-lg text-inverse-on-surface/80">
                 Our team of AI architects and machine learning engineers are ready to help you build the next generation of intelligent systems.
-              </p>
-              <button className="bg-white text-[#4647d3] px-10 py-5 rounded-2xl text-lg font-extrabold hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300">
+            </p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
                 Book a Call
               </button>
             </div>
           </div>
-        </section>
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+        </div>
+      </section>
       </div>
     </div>
   );

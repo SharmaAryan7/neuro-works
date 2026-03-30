@@ -193,28 +193,26 @@ export default function GrowthProjects() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-24 px-8 bg-[#f4f6ff]">
-          <div className="max-w-5xl mx-auto">
-            <div style={bgGradientPrimary} className="rounded-[40px] p-12 md:p-20 text-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
-              
-              <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">Have a Project in Mind?</h2>
-              <p className="font-body text-white/80 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+
+      <section className="py-32 px-8">
+        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+          <div className="absolute inset-0 btn-gradient opacity-10"></div>
+          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Have a Project in Mind?</h2>
+            <p className="text-lg text-inverse-on-surface/80">
                 Let's discuss how our growth systems can be tailored to your specific business objectives and market conditions.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <button className="w-full sm:w-auto bg-white text-[#4647d3] px-12 py-4 rounded-3xl font-bold text-lg shadow-xl hover:scale-105 transition-transform active:scale-95">
-                  Book a Call
-                </button>
-                <a className="font-headline text-white font-bold flex items-center gap-2 group hover:gap-4 transition-all" href="#">
-                  Browse More Projects 
-                  <span className="material-symbols-outlined" style={iconStyle}>arrow_forward</span>
-                </a>
-              </div>
+            </p>
+            <div className="pt-8">
+              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+                Book a Call
+              </button>
             </div>
           </div>
-        </section>
+          {/* Background Decorative Elements */}
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+        </div>
+      </section>
       </div>
     </div>
   );
