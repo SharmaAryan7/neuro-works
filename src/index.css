@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .hero-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(70, 71, 211, 0.15) 0%, rgba(106, 55, 212, 0.05) 50%, transparent 100%);
+  }
+  .text-gradient {
+    background: linear-gradient(to right, #4647d3, #6a37d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn-gradient {
+    background: linear-gradient(135deg, #4647d3 0%, #6a37d4 100%);
+  }
+}
