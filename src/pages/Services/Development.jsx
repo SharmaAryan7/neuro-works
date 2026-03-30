@@ -1,15 +1,15 @@
+import { Link } from 'react-router-dom';
+
 export default function Development() {
-  // Custom inline styles to guarantee pixel-perfect rendering without CSS config
-  const textGradient = {
-    background: 'linear-gradient(to right, #4647d3, #6a37d4)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
+  // Custom inline styles to guarantee pixel-perfect gradients without CSS config
+  const primaryGradientBg = {
+    background: 'linear-gradient(135deg, #4647d3 0%, #6a37d4 100%)',
   };
 
-  const glassCard = {
-    background: 'rgba(255, 255, 255, 0.7)',
-    backdropFilter: 'blur(20px)',
-    border: '1px solid rgba(255, 255, 255, 0.2)',
+  const gradientText = {
+    background: 'linear-gradient(135deg, #4647d3 0%, #6a37d4 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
   };
 
   const iconStyle = {
@@ -17,191 +17,221 @@ export default function Development() {
   };
 
   return (
-    <div className="bg-[#F8FAFC] text-[#242f41] font-body min-h-screen">
-      <div className="pt-24">
-        {/* Hero Section */}
-        <section className="relative overflow-hidden px-8 py-20 lg:py-32 max-w-7xl mx-auto">
-          <div className="absolute top-0 right-0 -z-10 w-[600px] h-[600px] bg-indigo-200/30 rounded-full blur-[120px] mix-blend-multiply opacity-70"></div>
-          <div className="absolute bottom-0 left-0 -z-10 w-[500px] h-[500px] bg-purple-200/20 rounded-full blur-[100px] mix-blend-multiply opacity-50"></div>
-          
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="inline-block px-4 py-1.5 rounded-full bg-[#9396ff]/20 text-[#4647d3] font-label text-xs font-bold tracking-[0.15em] uppercase">
-                Development Services
-              </div>
-              <h1 className="font-headline text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
-                Development Solutions That <span style={textGradient}>Build and Scale</span>
-              </h1>
-              <p className="text-lg text-[#515c70] leading-relaxed max-w-xl">
-                We design and develop high-performance websites and scalable SaaS platforms tailored for growth.
-              </p>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <button className="px-8 py-4 bg-gradient-to-r from-[#4647d3] to-[#6a37d4] text-white rounded-xl font-bold transition-all hover:shadow-xl hover:shadow-[#4647d3]/20 hover:-translate-y-1">
-                  Start Building
-                </button>
-                <button className="px-8 py-4 bg-[#ecf1ff] text-[#4647d3] rounded-xl font-bold transition-all hover:bg-[#d5e3ff]">
-                  View Case Studies
-                </button>
-              </div>
+    <div className="pt-24 bg-[#f4f6ff]">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden py-20 lg:py-32 px-6">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl opacity-30 pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#4647d3]/40 to-[#6a37d4]/40 blur-[120px] rounded-full"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto relative z-10 text-center lg:text-left grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[#4647d3]/10 text-[#4647d3] text-[11px] font-bold tracking-[0.05em] uppercase font-label">
+              DEVELOPMENT SERVICES
+            </span>
+            <h1 className="text-5xl lg:text-7xl font-extrabold font-headline tracking-tight leading-[1.1] text-[#242f41]">
+              Development Solutions That <br />
+              <span style={gradientText}>Build and Scale</span>
+            </h1>
+            <p className="text-lg lg:text-xl text-[#515c70] max-w-xl font-body leading-relaxed mx-auto lg:mx-0">
+              We design and develop high-performance websites and scalable SaaS platforms tailored for growth.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+              <Link 
+                style={primaryGradientBg}
+                className="inline-block text-center text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-[#4647d3]/30 transition-all active:scale-[0.98]"
+              >
+                Start Building
+              </Link>
+              <Link 
+                to="/work/development"
+                className="px-8 py-4 bg-[#ecf1ff] text-[#4647d3] rounded-xl font-bold transition-all hover:bg-[#d5e3ff]"
+              >
+                View Case Studies
+              </Link>
             </div>
-
-            {/* Mockup Image Cluster */}
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-indigo-500/10 to-purple-500/10 rounded-[2rem] blur-2xl transition-all group-hover:blur-3xl"></div>
-              <div className="relative bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-white/20">
-                <img 
-                  alt="Development Dashboard" 
-                  className="w-full h-auto" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI7etzBL3Qz53z-gepGOD58O9DjkmjELdRkq0g4J5kR0x5uFy9lyVTDBxJVxkPAq95AVDzFwIY4iCoIdp27KK8NnbM10z_gDBY4HPKGSAqkG_kfErNR5bHF8njiC0mowEsUBhu52SfxQ1SL5etxQg196zJyPhXOEkIkviqiSszNdnGC0RJFK1WabJnBXuSoHE0ugpeFUGHU_K6v1zfRt1PG-tnk56vbOhsHKGLZVnAJJoCXLLshmwL_D94-4xUe6BDneeZP5jbMneF"
-                />
-                
-                {/* Floating Glass Element */}
-                <div style={glassCard} className="absolute bottom-8 -left-8 p-6 rounded-2xl shadow-xl max-w-[240px]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-600">
-                      <span className="material-symbols-outlined" style={iconStyle}>speed</span>
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-[#242f41]">Optimization</div>
-                      <div className="text-[10px] text-[#515c70]">Real-time stats</div>
-                    </div>
+          </div>
+          
+          <div className="hidden lg:block relative">
+            <div className="relative bg-[#ffffff] rounded-xl p-4 shadow-2xl shadow-[#242f41]/5 border border-[#a2adc4]/10">
+              <img 
+                alt="Development Dashboard" 
+                className="rounded-lg w-full h-[500px] object-cover" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI7etzBL3Qz53z-gepGOD58O9DjkmjELdRkq0g4J5kR0x5uFy9lyVTDBxJVxkPAq95AVDzFwIY4iCoIdp27KK8NnbM10z_gDBY4HPKGSAqkG_kfErNR5bHF8njiC0mowEsUBhu52SfxQ1SL5etxQg196zJyPhXOEkIkviqiSszNdnGC0RJFK1WabJnBXuSoHE0ugpeFUGHU_K6v1zfRt1PG-tnk56vbOhsHKGLZVnAJJoCXLLshmwL_D94-4xUe6BDneeZP5jbMneF"
+              />
+              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-[#a2adc4]/10 max-w-[240px]">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-full bg-[#4647d3]/10 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[#4647d3]" style={iconStyle}>speed</span>
                   </div>
-                  <div className="h-2 w-full bg-slate-200 rounded-full overflow-hidden">
-                    <div className="h-full w-[85%] bg-green-500"></div>
+                  <div>
+                    <div className="font-bold text-sm text-[#242f41]">Optimization</div>
+                    <div className="text-[10px] text-[#515c70]">Real-time stats</div>
                   </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="h-2 w-full bg-[#dee8ff] rounded"></div>
+                  <div className="h-2 w-4/5 bg-[#dee8ff] rounded"></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* What We Do Section */}
-        <section className="px-8 py-24 max-w-7xl mx-auto text-center space-y-12">
-          <div className="max-w-3xl mx-auto space-y-6">
-            <h2 className="font-headline text-3xl lg:text-4xl font-bold text-[#242f41]">Scale With Confidence</h2>
-            <p className="text-lg text-[#515c70] leading-relaxed">
+      {/* What We Do Section */}
+      <section className="py-24 px-6 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold font-headline mb-6 text-slate-900">Scale With Confidence</h2>
+            <p className="text-lg text-slate-500 font-body leading-relaxed">
               Development at Neuro Works isn't just about writing code; it's about engineering the backbone of your digital success. We build scalable, high-performance systems that adapt as your business grows.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="p-8 rounded-3xl bg-white shadow-sm hover:shadow-xl transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-[#9396ff]/10 flex items-center justify-center text-[#4647d3] mb-6">
-                <span className="material-symbols-outlined" style={iconStyle}>rocket_launch</span>
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="space-y-8">
+              <div className="flex gap-6">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-[#9396ff]/30 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[#4647d3]" style={iconStyle}>rocket_launch</span>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold mb-2 text-[#242f41]">Performance First</h4>
+                  <p className="text-[#515c70] leading-relaxed">Every line of code is optimized for lightning-fast load times and seamless user interactions.</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">Performance First</h3>
-              <p className="text-sm text-[#515c70] leading-relaxed">Every line of code is optimized for lightning-fast load times and seamless user interactions.</p>
-            </div>
-            <div className="p-8 rounded-3xl bg-white shadow-sm hover:shadow-xl transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-[#dac9ff]/20 flex items-center justify-center text-[#6a37d4] mb-6">
-                <span className="material-symbols-outlined" style={iconStyle}>dynamic_feed</span>
+              <div className="flex gap-6">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-[#9396ff]/30 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[#4647d3]" style={iconStyle}>dynamic_feed</span>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold mb-2 text-[#242f41]">Agile Sprints</h4>
+                  <p className="text-[#515c70] leading-relaxed">Continuous delivery ensures your product evolves rapidly with real-world feedback loops.</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">Agile Sprints</h3>
-              <p className="text-sm text-[#515c70] leading-relaxed">Continuous delivery ensures your product evolves rapidly with real-world feedback loops.</p>
-            </div>
-            <div className="p-8 rounded-3xl bg-white shadow-sm hover:shadow-xl transition-all duration-500">
-              <div className="w-14 h-14 rounded-2xl bg-[#ff909d]/10 flex items-center justify-center text-[#a53046] mb-6">
-                <span className="material-symbols-outlined" style={iconStyle}>security</span>
+              <div className="flex gap-6">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-[#9396ff]/30 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[#4647d3]" style={iconStyle}>security</span>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold mb-2 text-[#242f41]">Military-Grade Security</h4>
+                  <p className="text-[#515c70] leading-relaxed">Robust architecture built with security-first principles to protect your data and users.</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">Military-Grade Security</h3>
-              <p className="text-sm text-[#515c70] leading-relaxed">Robust architecture built with security-first principles to protect your data and users.</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Services Offered Section */}
-        <section className="bg-[#EEF2FF] py-24 px-8">
-          <div className="max-w-7xl mx-auto space-y-16">
-            <div className="text-center space-y-4">
-              <div className="text-[#4647d3] font-label text-xs font-bold tracking-[0.2em] uppercase">The Toolkit</div>
-              <h2 className="font-headline text-4xl font-bold">Our Core Expertise</h2>
-            </div>
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Card 1 */}
-              <div className="group bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full bg-[#f4f6ff] mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-4xl text-[#4647d3]" style={iconStyle}>browser_updated</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Web Development</h3>
-                <p className="text-[#515c70] leading-relaxed">
-                  Build fast, responsive, and modern websites optimized for performance.
-                </p>
-              </div>
-              {/* Card 2 */}
-              <div className="group bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full bg-[#f4f6ff] mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-4xl text-[#4647d3]" style={iconStyle}>cloud_done</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4">SaaS Development</h3>
-                <p className="text-[#515c70] leading-relaxed">
-                  Develop scalable platforms and digital products tailored to your business.
-                </p>
-              </div>
-              {/* Card 3 */}
-              <div className="group bg-white rounded-[2rem] p-10 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full bg-[#f4f6ff] mb-8 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-4xl text-[#4647d3]" style={iconStyle}>hub</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4">System Architecture</h3>
-                <p className="text-[#515c70] leading-relaxed">
-                  Design robust systems that support long-term scalability and performance.
-                </p>
-              </div>
-            </div>
+      {/* Core Capabilities Cards */}
+      <section className="py-24 px-6 bg-[#EEF2FF]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold font-headline mb-4 text-[#242f41]">Our Core Expertise</h2>
+            <p className="text-[#515c70]">Specialized development systems designed for modern enterprise needs.</p>
           </div>
-        </section>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-[#a2adc4]/5 flex flex-col">
+              <div className="w-16 h-16 rounded-2xl bg-[#4647d3]/5 flex items-center justify-center mb-8 group-hover:bg-[#4647d3]/10 transition-colors">
+                <span className="material-symbols-outlined text-3xl text-[#4647d3]" style={iconStyle}>browser_updated</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 font-headline text-slate-900">Web Development</h3>
+              <p className="text-slate-500 font-body leading-relaxed mb-8 flex-grow">
+                Build fast, responsive, and modern websites optimized for performance and user experience.
+              </p>
+              <Link to="/contact" className="text-[#4647d3] font-bold inline-flex items-center gap-2 group/link w-fit">
+                Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
+              </Link>
+            </div>
 
-        {/* Recent Successes Section */}
-        <section className="px-8 py-24 max-w-7xl mx-auto space-y-12">
-          <div className="flex flex-col md:flex-row justify-between items-end gap-6">
-            <div className="space-y-4">
-              <h2 className="font-headline text-4xl font-bold">Recent Successes</h2>
-              <p className="text-[#515c70] text-lg">Real results for visionary companies.</p>
+            {/* Card 2 */}
+            <div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-[#a2adc4]/5 flex flex-col">
+              <div className="w-16 h-16 rounded-2xl bg-[#6a37d4]/5 flex items-center justify-center mb-8 group-hover:bg-[#6a37d4]/10 transition-colors">
+                <span className="material-symbols-outlined text-3xl text-[#6a37d4]" style={iconStyle}>cloud_done</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 font-headline text-slate-900">SaaS Development</h3>
+              <p className="text-slate-500 font-body leading-relaxed mb-8 flex-grow">
+                Develop scalable platforms and digital products tailored to solve complex business problems.
+              </p>
+              <Link to="/contact" className="text-[#6a37d4] font-bold inline-flex items-center gap-2 group/link w-fit">
+                Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
+              </Link>
             </div>
-            <a className="flex items-center gap-2 text-[#4647d3] font-bold group" href="#">
-              View All Development Projects 
-              <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
-            </a>
+
+            {/* Card 3 */}
+            <div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-[#a2adc4]/5 flex flex-col">
+              <div className="w-16 h-16 rounded-2xl bg-[#4647d3]/5 flex items-center justify-center mb-8 group-hover:bg-[#4647d3]/10 transition-colors">
+                <span className="material-symbols-outlined text-3xl text-[#4647d3]" style={iconStyle}>hub</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 font-headline text-slate-900">System Architecture</h3>
+              <p className="text-slate-500 font-body leading-relaxed mb-8 flex-grow">
+                Design robust systems that support long-term scalability, performance, and integrations.
+              </p>
+              <Link to="/contact" className="text-[#4647d3] font-bold inline-flex items-center gap-2 group/link w-fit">
+                Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
+              </Link>
+            </div>
           </div>
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Project Card 1 */}
-            <div className="group rounded-[2.5rem] overflow-hidden bg-white shadow-lg">
-              <div className="aspect-video overflow-hidden">
+        </div>
+      </section>
+
+      {/* Recent Successes Section */}
+      <section className="py-24 px-6 bg-[#f4f6ff]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold font-headline mb-4 text-slate-900">Recent Successes</h2>
+              <p className="text-lg text-slate-500">Real results for visionary companies</p>
+            </div>
+            <Link to="/work/development" className="inline-flex items-center gap-2 font-bold text-[#4647d3] hover:text-[#6a37d4] transition-colors">
+              View All Development Projects <span className="material-symbols-outlined" style={iconStyle}>arrow_forward</span>
+            </Link>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Project 1 */}
+            <Link to="/work/development" className="block group cursor-pointer">
+              <div className="overflow-hidden rounded-xl aspect-[16/10] mb-8 shadow-lg">
                 <img 
-                  alt="Project One" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                  alt="Vantage Retail Platform" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwp-G05J_jmcnmWIkDPeeek8egbHX391zSNYImmgEn2RYZekhHJvu8W8jq-pd8GWrDe0yu29lT9Q8ybYNZQ_SXgtn5PLkmo2RSmLzhiOE4XHwEJdRz7OBpe12p2lPjBGPgWGr9TYrX-xTMRhWRaJkcR2qK1RrooXjpArF1Rsub6-LBh4zft206mVJp2kQ90I2MzUPd2fM7GYeFJu_jUzuaHaUBi5mhv8LIgcXe9UQziR_I9VmwQqwRDrueWEfQ1MzldMm5LOZ2obDS"
                 />
               </div>
-              <div className="p-10 space-y-4">
-                <div className="text-[#4647d3] font-bold text-3xl">60%</div>
-                <h4 className="text-2xl font-bold">Vantage Retail Platform</h4>
-                <p className="text-[#515c70] leading-relaxed">
-                  Improved website performance by 60% and enabled seamless multi-region deployment for a global e-commerce brand.
-                </p>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="px-3 py-1 bg-[#4647d3]/10 text-[#4647d3] text-[10px] font-extrabold uppercase tracking-widest rounded-full">E-Commerce</span>
+                <span className="text-sm font-bold text-[#6a37d4]">60% Performance Boost</span>
               </div>
-            </div>
-            {/* Project Card 2 */}
-            <div className="group rounded-[2.5rem] overflow-hidden bg-white shadow-lg">
-              <div className="aspect-video overflow-hidden">
+              <h3 className="text-2xl font-bold mb-4 text-[#242f41] group-hover:text-[#4647d3] transition-colors">Vantage Retail Platform</h3>
+              <p className="text-[#515c70] font-body leading-relaxed">
+                Improved website performance by 60% and enabled seamless multi-region deployment for a global e-commerce brand.
+              </p>
+            </Link>
+
+            {/* Project 2 */}
+            <Link to="/work/development" className="block group cursor-pointer">
+              <div className="overflow-hidden rounded-xl aspect-[16/10] mb-8 shadow-lg">
                 <img 
-                  alt="Project Two" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                  alt="Nexus SaaS Infrastructure" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJxKyu7cxRgNNH4n43YL7dLNMttrvE9aQfAhx-SZa0HItb_33rjwm47Uhj3gdBswYlrshPPPY8MgMHhh2d-Uz534N6SUWt5F2t5R9FCiixHwTVDZiSeLlolfPv4jmZkFF4kVk_hmirokqEHKsUA0DOoivff8CEW7im2zF3mcZbEXp0CQpaLBnOc4eqAnXjIH0gkOrB_pa90FS_6QNkuNT5-Ek0KJJJg5JJxIYKhd-_c7kvLzMew3L_kcBbEvYsE8008vTPs60G-Yzu"
                 />
               </div>
-              <div className="p-10 space-y-4">
-                <div className="text-[#4647d3] font-bold text-3xl">2.5M</div>
-                <h4 className="text-2xl font-bold">Nexus SaaS Infrastructure</h4>
-                <p className="text-[#515c70] leading-relaxed">
-                  Architected a robust serverless backend capable of handling 2.5M daily active users with zero downtime deployments.
-                </p>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="px-3 py-1 bg-[#6a37d4]/10 text-[#6a37d4] text-[10px] font-extrabold uppercase tracking-widest rounded-full">Architecture</span>
+                <span className="text-sm font-bold text-[#4647d3]">2.5M Daily Users</span>
               </div>
-            </div>
+              <h3 className="text-2xl font-bold mb-4 text-[#242f41] group-hover:text-[#4647d3] transition-colors">Nexus SaaS Infrastructure</h3>
+              <p className="text-[#515c70] font-body leading-relaxed">
+                Architected a robust serverless backend capable of handling 2.5M daily active users with zero downtime deployments.
+              </p>
+            </Link>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA Section */}
-
+      {/* Final CTA Section */}
       <section className="py-32 px-8">
         <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
           <div className="absolute inset-0 btn-gradient opacity-10"></div>
@@ -209,17 +239,19 @@ export default function Development() {
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Ready to Build Your Next Product?</h2>
             <p className="text-lg text-inverse-on-surface/80">Let’s create scalable digital solutions tailored to your needs. Our team is ready to bring your vision to life.</p>
             <div className="pt-8">
-              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+              <Link 
+                to="/contact" 
+                className="inline-block btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all"
+              >
                 Book a Call
-              </button>
+              </Link>
             </div>
           </div>
           {/* Background Decorative Elements */}
-          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
-          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
         </div>
       </section>
-      </div>
     </div>
   );
 }

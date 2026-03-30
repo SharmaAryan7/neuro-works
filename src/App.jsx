@@ -15,6 +15,7 @@ import WorkOverview from './pages/Work/WorkOverview';
 import GrowthProjects from './pages/Work/GrowthProjects';
 import AIProjects from './pages/Work/AIProjects';
 import CaseStudy from './pages/Work/CaseStudy';
+import DevelopmentProjects from './pages/Work/DevelopmentProjects'
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Insights from './pages/Insights';
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/work" element={<WorkOverview />} />
           <Route path="/work/growth-systems" element={<GrowthProjects />} />
           <Route path="/work/ai-solutions" element={<AIProjects />} />
+          <Route path="/work/development" element={<DevelopmentProjects/>} />
           <Route path="/work/case-study/:id" element={<CaseStudy />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function AISolutions() {
   // Custom inline styles to guarantee pixel-perfect gradients without CSS config
   const primaryGradientBg = {
@@ -35,15 +37,18 @@ export default function AISolutions() {
               We build intelligent systems that streamline workflows, reduce manual work, and help your business operate efficiently.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-              <button 
+              <Link 
                 style={primaryGradientBg}
-                className="text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-[#4647d3]/30 transition-all active:scale-[0.98]"
+                className="inline-block text-center text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-[#4647d3]/30 transition-all active:scale-[0.98]"
               >
                 Start Automating
-              </button>
-              <button className="bg-[#ffffff] text-[#242f41] px-8 py-4 rounded-xl font-bold text-lg border border-[#a2adc4]/15 hover:bg-[#ecf1ff] transition-all">
+              </Link>
+              <Link 
+                to="/work/ai-solutions"
+                className="px-8 py-4 bg-[#ecf1ff] text-[#4647d3] rounded-xl font-bold transition-all hover:bg-[#d5e3ff]"
+              >
                 View Case Studies
-              </button>
+              </Link>
             </div>
           </div>
           
@@ -123,9 +128,9 @@ export default function AISolutions() {
               <p className="text-slate-500 font-body leading-relaxed mb-8">
                 Deploy custom LLM-powered pipelines that handle document processing, data extraction, and repetitive decision-making tasks.
               </p>
-              <a className="text-[#4647d3] font-bold inline-flex items-center gap-2 group/link" href="#">
+              <Link className="text-[#4647d3] font-bold inline-flex items-center gap-2 group/link">
                 Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
-              </a>
+              </Link>
             </div>
 
             {/* Card 2 */}
@@ -137,9 +142,9 @@ export default function AISolutions() {
               <p className="text-slate-500 font-body leading-relaxed mb-8">
                 Autonomous digital workers that navigate your existing software stack to complete complex, multi-step business objectives.
               </p>
-              <a className="text-[#6a37d4] font-bold inline-flex items-center gap-2 group/link" href="#">
+              <Link className="text-[#6a37d4] font-bold inline-flex items-center gap-2 group/link">
                 Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
-              </a>
+              </Link>
             </div>
 
             {/* Card 3 */}
@@ -151,9 +156,9 @@ export default function AISolutions() {
               <p className="text-slate-500 font-body leading-relaxed mb-8">
                 Enterprise-grade conversational interfaces that provide instant support and lead generation with human-like understanding.
               </p>
-              <a className="text-[#4647d3] font-bold inline-flex items-center gap-2 group/link" href="#">
+              <Link className="text-[#4647d3] font-bold inline-flex items-center gap-2 group/link">
                 Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -167,14 +172,14 @@ export default function AISolutions() {
               <h2 className="text-3xl lg:text-4xl font-bold font-headline mb-4 text-slate-900">Recent Successes</h2>
               <p className="text-lg text-slate-500">Real impact delivered through intelligent systems</p>
             </div>
-            <a className="inline-flex items-center gap-2 font-bold text-[#4647d3] hover:text-[#6a37d4] transition-colors" href="#">
+            <Link to="/work/ai-solutions" className="inline-flex items-center gap-2 font-bold text-[#4647d3] hover:text-[#6a37d4] transition-colors">
               View All AI Projects <span className="material-symbols-outlined" style={iconStyle}>arrow_forward</span>
-            </a>
+            </Link>
           </div>
           
           <div className="grid md:grid-cols-2 gap-10">
             {/* Project 1 */}
-            <div className="group cursor-pointer">
+            <Link to="/work/ai-solutions" className="block group cursor-pointer">
               <div className="overflow-hidden rounded-xl aspect-[16/10] mb-8 shadow-lg">
                 <img 
                   alt="FinTech Dashboard" 
@@ -190,10 +195,10 @@ export default function AISolutions() {
               <p className="text-[#515c70] font-body leading-relaxed">
                 Implemented an AI agent layer that automates 90% of manual transaction reconciliation, saving over 40 hours per week for the finance team.
               </p>
-            </div>
+            </Link>
 
             {/* Project 2 */}
-            <div className="group cursor-pointer">
+            <Link to="/work/ai-solutions" className="block group cursor-pointer">
               <div className="overflow-hidden rounded-xl aspect-[16/10] mb-8 shadow-lg">
                 <img 
                   alt="Support Team" 
@@ -209,7 +214,7 @@ export default function AISolutions() {
               <p className="text-[#515c70] font-body leading-relaxed">
                 Deployed a custom-trained chatbot that resolved 65% of customer inquiries without human intervention, maintaining a 98% CSAT score.
               </p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -222,14 +227,17 @@ export default function AISolutions() {
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Ready to Automate Your Business?</h2>
             <p className="text-lg text-inverse-on-surface/80">Let’s build intelligent systems tailored to your needs. Our team is ready to help you scale through smart automation.</p>
             <div className="pt-8">
-              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+              <Link 
+                to="/contact" 
+                className="inline-block btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all"
+              >
                 Book a Call
-              </button>
+              </Link>
             </div>
           </div>
           {/* Background Decorative Elements */}
-          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
-          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
         </div>
       </section>
     </div>

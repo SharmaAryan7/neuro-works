@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function PrivacyPolicy() {
   // State to track which section is currently visible on screen
@@ -192,9 +193,10 @@ export default function PrivacyPolicy() {
                 Our legal and data privacy teams are here to help you understand how we handle your digital footprints.
             </p>
             <div className="pt-8">
-              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+              <Link to="/contact"
+               className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
                 Book a Call
-              </button>
+              </Link>
             </div>
           </div>
           {/* Background Decorative Elements */}

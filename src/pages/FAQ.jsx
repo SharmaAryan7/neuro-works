@@ -114,6 +114,7 @@ export default function FAQ() {
 
         {/* Final CTA Section */}
 
+
     <section className="py-32 px-8">
         <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
           <div className="absolute inset-0 btn-gradient opacity-10"></div>

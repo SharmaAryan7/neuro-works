@@ -1,4 +1,9 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function ServicesOverview() {
+  // Initialize the navigate function
+  const navigate = useNavigate();
+
   // Converted your custom CSS classes to inline objects for guaranteed rendering
   const primaryGradientBg = {
     background: 'linear-gradient(135deg, #4647d3 0%, #6a37d4 100%)',
@@ -36,7 +41,10 @@ export default function ServicesOverview() {
             >
               Get Started
             </button>
-            <button className="bg-[#cdddfe] text-[#242f41] px-8 py-4 rounded-xl font-headline font-bold text-base hover:bg-[#d5e3ff] transition-colors">
+            <button 
+              onClick={() => navigate('/work')}
+              className="bg-[#cdddfe] text-[#242f41] px-8 py-4 rounded-xl font-headline font-bold text-base hover:bg-[#d5e3ff] transition-colors"
+            >
               Explore Work
             </button>
           </div>
@@ -66,6 +74,7 @@ export default function ServicesOverview() {
                 Our AI practice focuses on tangible ROI. We integrate custom neural architectures into your existing stack to eliminate bottlenecks and empower your team.
               </p>
               <button 
+                onClick={() => navigate('/services/ai-solutions')}
                 style={primaryGradientBg} 
                 className="text-[#f4f1ff] px-8 py-3 rounded-xl font-headline font-bold text-sm active:scale-95 transition-transform shadow-lg shadow-[#4647d3]/20 w-fit"
               >
@@ -116,6 +125,7 @@ export default function ServicesOverview() {
                 Engineering excellence meets world-class design. We build secure, robust, and lightning-fast digital products that stand the test of time and scale.
               </p>
               <button 
+                onClick={() => navigate('/services/development')}
                 style={primaryGradientBg} 
                 className="text-[#f4f1ff] px-8 py-3 rounded-xl font-headline font-bold text-sm active:scale-95 transition-transform shadow-lg shadow-[#4647d3]/20 w-fit"
               >
@@ -144,6 +154,7 @@ export default function ServicesOverview() {
                 Growth isn't an accident. We engineer conversion-focused ecosystems that turn attention into revenue through data-driven strategies and persuasive copy.
               </p>
               <button 
+                onClick={() => navigate('/services/growth-systems')}
                 style={primaryGradientBg} 
                 className="text-[#f4f1ff] px-8 py-3 rounded-xl font-headline font-bold text-sm active:scale-95 transition-transform shadow-lg shadow-[#4647d3]/20 w-fit"
               >
@@ -212,7 +223,7 @@ export default function ServicesOverview() {
         </div>
       </section>
 
-
+      {/* Final CTA */}
       <section className="py-32 px-8">
         <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
           <div className="absolute inset-0 btn-gradient opacity-10"></div>
@@ -220,7 +231,10 @@ export default function ServicesOverview() {
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight"> Let’s Build Your <br className="hidden md:block" /> Growth System</h2>
             <p className="text-lg text-inverse-on-surface/80">Start your journey with AI-powered systems today. Join the companies scaling with Neuro Works.</p>
             <div className="pt-8">
-              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+              <button 
+                onClick={() => navigate('/contact')}
+                className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all"
+              >
                 Book a Call
               </button>
             </div>

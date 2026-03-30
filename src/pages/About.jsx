@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function About() {
   // Custom inline styles for reliable gradient rendering
   const gradientText = {
@@ -124,9 +126,9 @@ export default function About() {
                 Join the ranks of forward-thinking enterprises that have redefined their industry with our intelligent systems.
             </p>
             <div className="pt-8">
-              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+              <Link to="/contact" className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
                 Book a Call
-              </button>
+              </Link>
             </div>
           </div>
           {/* Background Decorative Elements */}

@@ -4,8 +4,11 @@ export default function Navbar() {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  // UPDATED LOGIC: Triggers the local nav for /services AND all its subpages
+  // Triggers the local nav for /services AND all its subpages
   const isServiceSection = currentPath.startsWith('/services');
+  
+  // Triggers the local nav for /work AND all its subpages
+  const isWorkSection = currentPath.startsWith('/work');
 
   // Custom styling for the CTA button
   const ctaGradient = {
@@ -57,8 +60,42 @@ export default function Navbar() {
                 Growth Systems
               </Link>
             </>
+          ) : isWorkSection ? (
+            /* LOCAL NAVIGATION: Shown on the main Work page AND all subpages */
+            <>
+              <Link 
+                to="/work/ai-solutions" 
+                className={`transition-colors duration-200 ${
+                  currentPath.includes('ai-solutions') 
+                    ? 'text-[#4647d3] font-semibold border-b-2 border-[#4647d3] pb-1' 
+                    : 'text-[#515c70] hover:text-[#4647d3]'
+                }`}
+              >
+                AI Projects
+              </Link>
+              <Link 
+                to="/work/development" 
+                className={`transition-colors duration-200 ${
+                  currentPath.includes('development') 
+                    ? 'text-[#4647d3] font-semibold border-b-2 border-[#4647d3] pb-1' 
+                    : 'text-[#515c70] hover:text-[#4647d3]'
+                }`}
+              >
+                Development Projects
+              </Link>
+              <Link 
+                to="/work/growth-systems" 
+                className={`transition-colors duration-200 ${
+                  currentPath.includes('growth-systems') 
+                    ? 'text-[#4647d3] font-semibold border-b-2 border-[#4647d3] pb-1' 
+                    : 'text-[#515c70] hover:text-[#4647d3]'
+                }`}
+              >
+                Growth Projects
+              </Link>
+            </>
           ) : (
-            /* GLOBAL NAVIGATION: Shown on Home, Work, About, Insights */
+            /* GLOBAL NAVIGATION: Shown on Home, About, Insights */
             <>
               <Link 
                 to="/" 
@@ -107,7 +144,7 @@ export default function Navbar() {
         {/* Universal CTA Button */}
         <Link 
           to="/contact"
-          className="text-[#f4f1ff] px-6 py-2.5 rounded-full font-semibold text-sm active:scale-95 transition-transform shadow-lg shadow-[#4647d3]/20"
+          className="inline-block text-[#f4f1ff] px-6 py-2.5 rounded-full font-semibold text-sm active:scale-95 transition-transform shadow-lg shadow-[#4647d3]/20"
           style={ctaGradient}
         >
           Book a Call

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function WorkOverview() {
   // Custom inline styles to guarantee pixel-perfect gradients and glows
   const premiumGradient = {
@@ -35,12 +37,19 @@ export default function WorkOverview() {
               Explore how we’ve helped businesses scale with AI, development, and growth systems. We build digital products that move the needle.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <button style={premiumGradient} className="text-white px-8 py-4 rounded-3xl font-headline font-bold text-sm shadow-xl hover:opacity-90 transition-opacity active:scale-95">
+              <Link 
+                to="/contact"
+                style={premiumGradient} 
+                className="inline-block text-white px-8 py-4 rounded-3xl font-headline font-bold text-sm shadow-xl hover:opacity-90 transition-opacity active:scale-95 text-center"
+              >
                 Book a Call
-              </button>
-              <button className="bg-[#cdddfe] text-[#4647d3] px-8 py-4 rounded-3xl font-headline font-bold text-sm hover:bg-[#d5e3ff] transition-colors active:scale-95">
+              </Link>
+              <Link 
+                to="/services"
+                className="inline-block bg-[#cdddfe] text-[#4647d3] px-8 py-4 rounded-3xl font-headline font-bold text-sm hover:bg-[#d5e3ff] transition-colors active:scale-95 text-center"
+              >
                 View Services
-              </button>
+              </Link>
             </div>
           </div>
           
@@ -105,9 +114,9 @@ export default function WorkOverview() {
               <p className="font-body text-[#515c70] mb-8 flex-grow leading-relaxed">
                 Custom LLM implementations and predictive analytics engines that automate complex decision making.
               </p>
-              <a className="font-headline font-bold text-sm text-[#4647d3] flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+              <Link to="/work/ai-solutions" className="font-headline font-bold text-sm text-[#4647d3] flex items-center gap-2 group-hover:gap-3 transition-all">
                 View AI Projects <span className="material-symbols-outlined text-lg" style={iconStyle}>arrow_forward</span>
-              </a>
+              </Link>
             </div>
             {/* DEVELOPMENT WORK */}
             <div className="bg-[#ffffff] p-10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.02)] flex flex-col group hover:shadow-[0_30px_60px_rgba(0,0,0,0.05)] transition-shadow duration-300 border border-[#a2adc4]/10">
@@ -116,9 +125,9 @@ export default function WorkOverview() {
               <p className="font-body text-[#515c70] mb-8 flex-grow leading-relaxed">
                 High-performance web applications and enterprise-grade software built for extreme scalability and speed.
               </p>
-              <a className="font-headline font-bold text-sm text-[#6a37d4] flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+              <Link to="/work/development" className="font-headline font-bold text-sm text-[#6a37d4] flex items-center gap-2 group-hover:gap-3 transition-all">
                 View Dev Projects <span className="material-symbols-outlined text-lg" style={iconStyle}>arrow_forward</span>
-              </a>
+              </Link>
             </div>
             {/* GROWTH WORK */}
             <div className="bg-[#ffffff] p-10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.02)] flex flex-col group hover:shadow-[0_30px_60px_rgba(0,0,0,0.05)] transition-shadow duration-300 border border-[#a2adc4]/10">
@@ -127,9 +136,9 @@ export default function WorkOverview() {
               <p className="font-body text-[#515c70] mb-8 flex-grow leading-relaxed">
                 Data-driven acquisition funnels and conversion optimization systems that turn traffic into loyal revenue.
               </p>
-              <a className="font-headline font-bold text-sm text-[#a53046] flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+              <Link to="/work/growth-systems" className="font-headline font-bold text-sm text-[#a53046] flex items-center gap-2 group-hover:gap-3 transition-all">
                 View Growth Projects <span className="material-symbols-outlined text-lg" style={iconStyle}>arrow_forward</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -144,7 +153,7 @@ export default function WorkOverview() {
               <p className="font-body text-[#515c70] mt-2">See how our solutions perform in the real world.</p>
             </div>
             <div className="hidden md:block">
-              <button className="font-headline font-bold text-[#4647d3] hover:underline">See All Case Studies</button>
+              <Link className="font-headline font-bold text-[#4647d3] hover:underline">See All Case Studies</Link>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -197,17 +206,16 @@ export default function WorkOverview() {
       </section>
 
       {/* Final CTA Section */}
-
-      <section className="py-32 px-8">
+       <section className="py-32 px-8">
         <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
           <div className="absolute inset-0 btn-gradient opacity-10"></div>
           <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Have a Project in Mind?</h2>
             <p className="text-lg text-inverse-on-surface/80"> Let’s build systems that deliver real results. Our team is ready to help you navigate the future of AI and development.</p>
             <div className="pt-8">
-              <button className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+              <Link to="/contact" className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
                 Book a Call
-              </button>
+              </Link>
             </div>
           </div>
           {/* Background Decorative Elements */}
@@ -215,6 +223,7 @@ export default function WorkOverview() {
           <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
         </div>
       </section>
+
     </div>
   );
 }
