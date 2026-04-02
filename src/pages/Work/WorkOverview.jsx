@@ -144,7 +144,7 @@ export default function WorkOverview() {
         </div>
       </section>
 
-      {/* Featured Projects Preview */}
+      {/* Featured Projects Preview (Updated to 3 Columns) */}
       <section className="py-24 bg-[#EEF2FF]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-end mb-16">
@@ -156,10 +156,11 @@ export default function WorkOverview() {
               <Link className="font-headline font-bold text-[#4647d3] hover:underline">See All Case Studies</Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Project Card 1 */}
             <div className="group cursor-pointer">
-              <div className="aspect-[16/10] bg-white rounded-3xl overflow-hidden shadow-sm mb-8 relative border border-[#a2adc4]/5">
+              <div className="aspect-[16/10] bg-white rounded-3xl overflow-hidden shadow-sm mb-6 relative border border-[#a2adc4]/5">
                 <img 
                   alt="Data visualization dashboard" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
@@ -169,19 +170,20 @@ export default function WorkOverview() {
                   <span className="bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-label text-[10px] font-bold tracking-widest text-[#4647d3] shadow-sm uppercase">AI CASE STUDY</span>
                 </div>
               </div>
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="font-headline text-2xl font-bold text-[#242f41] group-hover:text-[#4647d3] transition-colors">Nexus Analytics Platform</h3>
-                <div className="bg-[#9396ff]/20 text-[#4647d3] px-4 py-1.5 rounded-full font-headline text-sm font-bold">
+              <div className="flex justify-between items-start mb-3 flex-wrap gap-2">
+                <h3 className="font-headline text-xl font-bold text-[#242f41] group-hover:text-[#4647d3] transition-colors">Nexus Analytics Platform</h3>
+                <div className="bg-[#9396ff]/20 text-[#4647d3] px-3 py-1 rounded-full font-headline text-xs font-bold whitespace-nowrap">
                   +45% Conversions
                 </div>
               </div>
-              <p className="font-body text-[#515c70] leading-relaxed">
+              <p className="font-body text-[#515c70] text-sm leading-relaxed">
                 We developed a custom AI model that predicts user behavior, allowing Nexus to personalize their homepage in real-time, resulting in a massive lift in user retention.
               </p>
             </div>
+
             {/* Project Card 2 */}
             <div className="group cursor-pointer">
-              <div className="aspect-[16/10] bg-white rounded-3xl overflow-hidden shadow-sm mb-8 relative border border-[#a2adc4]/5">
+              <div className="aspect-[16/10] bg-white rounded-3xl overflow-hidden shadow-sm mb-6 relative border border-[#a2adc4]/5">
                 <img 
                   alt="SaaS interface design" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
@@ -191,14 +193,37 @@ export default function WorkOverview() {
                   <span className="bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-label text-[10px] font-bold tracking-widest text-[#6a37d4] shadow-sm uppercase">SYSTEMS DEV</span>
                 </div>
               </div>
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="font-headline text-2xl font-bold text-[#242f41] group-hover:text-[#6a37d4] transition-colors">CloudFlow Infrastructure</h3>
-                <div className="bg-[#dac9ff]/20 text-[#6a37d4] px-4 py-1.5 rounded-full font-headline text-sm font-bold">
+              <div className="flex justify-between items-start mb-3 flex-wrap gap-2">
+                <h3 className="font-headline text-xl font-bold text-[#242f41] group-hover:text-[#6a37d4] transition-colors">CloudFlow Infrastructure</h3>
+                <div className="bg-[#dac9ff]/20 text-[#6a37d4] px-3 py-1 rounded-full font-headline text-xs font-bold whitespace-nowrap">
                   99.9% Efficiency
                 </div>
               </div>
-              <p className="font-body text-[#515c70] leading-relaxed">
+              <p className="font-body text-[#515c70] text-sm leading-relaxed">
                 Re-architected CloudFlow's legacy system into a serverless powerhouse. The transition reduced infrastructure costs by 60% while doubling deployment speed.
+              </p>
+            </div>
+
+            {/* Project Card 3 (New) */}
+            <div className="group cursor-pointer">
+              <div className="aspect-[16/10] bg-white rounded-3xl overflow-hidden shadow-sm mb-6 relative border border-[#a2adc4]/5">
+                <img 
+                  alt="Growth marketing dashboard" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA38-KURmyNJaEK020fuHLJGyHT89Abv_NxdujNmvBNXo6lkYkkKJiTm7th0-GC4U9OsoxTlBx5eBuiuaCWuWfv-NPdnNmJM2T2dbvikE85AJ4nJqHCJrbPMZk2gVsftSSvyL0dst3yurdF1GWxDI7ZjnNJ8xLqtREs-wvzLzs0nLz3x6YcJMiCZ3Pa6_1x7SQMRocSveIXC7LxBZd8wHTay5ahFTsSyyju8GFclLvSUbYDuALINTD7DoJOjffv9fbmcieOU2OZLS6i"
+                />
+                <div className="absolute top-6 left-6">
+                  <span className="bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-label text-[10px] font-bold tracking-widest text-[#a53046] shadow-sm uppercase">GROWTH SYSTEM</span>
+                </div>
+              </div>
+              <div className="flex justify-between items-start mb-3 flex-wrap gap-2">
+                <h3 className="font-headline text-xl font-bold text-[#242f41] group-hover:text-[#a53046] transition-colors">Precision Ad-Tech Scale</h3>
+                <div className="bg-[#ff909d]/20 text-[#a53046] px-3 py-1 rounded-full font-headline text-xs font-bold whitespace-nowrap">
+                  3.5x ROI
+                </div>
+              </div>
+              <p className="font-body text-[#515c70] text-sm leading-relaxed">
+                Implemented a neuro-response engine to optimize creative assets, delivering a record-breaking ROAS while simultaneously lowering CPA by 40%.
               </p>
             </div>
           </div>

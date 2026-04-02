@@ -18,34 +18,34 @@ export default function AISolutions() {
 
   return (
     <div className="pt-24 bg-[#f4f6ff]">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 lg:py-32 px-6">
+      {/* Hero Section (Sizes Adjusted) */}
+      <section className="relative overflow-hidden py-16 lg:py-20 px-6">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl opacity-30 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-r from-[#4647d3]/40 to-[#6a37d4]/40 blur-[120px] rounded-full"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto relative z-10 text-center lg:text-left grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+        <div className="max-w-7xl mx-auto relative z-10 text-center lg:text-left grid lg:grid-cols-2 gap-10 items-center">
+          <div className="space-y-6">
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#4647d3]/10 text-[#4647d3] text-[11px] font-bold tracking-[0.05em] uppercase font-label">
               AI SOLUTIONS
             </span>
-            <h1 className="text-5xl lg:text-7xl font-extrabold font-headline tracking-tight leading-[1.1] text-[#242f41]">
+            <h1 className="text-4xl lg:text-5xl font-extrabold font-headline tracking-tight leading-[1.2] text-[#242f41]">
               AI Solutions That <br />
               <span style={gradientText}>Automate and Scale</span>
             </h1>
-            <p className="text-lg lg:text-xl text-[#515c70] max-w-xl font-body leading-relaxed mx-auto lg:mx-0">
+            <p className="text-base lg:text-lg text-[#515c70] max-w-lg font-body leading-relaxed mx-auto lg:mx-0">
               We build intelligent systems that streamline workflows, reduce manual work, and help your business operate efficiently.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
               <Link 
                 style={primaryGradientBg}
-                className="inline-block text-center text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-[#4647d3]/30 transition-all active:scale-[0.98]"
+                className="inline-block text-center text-white px-8 py-3.5 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-[#4647d3]/30 transition-all active:scale-[0.98]"
               >
                 Start Automating
               </Link>
               <Link 
                 to="/work/ai-solutions"
-                className="px-8 py-4 bg-[#ecf1ff] text-[#4647d3] rounded-xl font-bold transition-all hover:bg-[#d5e3ff]"
+                className="px-8 py-3.5 bg-[#ecf1ff] text-[#4647d3] rounded-xl font-bold text-base transition-all hover:bg-[#d5e3ff] text-center"
               >
                 View Case Studies
               </Link>
@@ -53,16 +53,16 @@ export default function AISolutions() {
           </div>
           
           <div className="hidden lg:block relative">
-            <div className="relative bg-[#ffffff] rounded-xl p-4 shadow-2xl shadow-[#242f41]/5 border border-[#a2adc4]/10">
+            <div className="relative bg-[#ffffff] rounded-xl p-3 shadow-2xl shadow-[#242f41]/5 border border-[#a2adc4]/10 max-w-lg mx-auto">
               <img 
                 alt="AI Visualization" 
-                className="rounded-lg w-full h-[500px] object-cover" 
+                className="rounded-lg w-full h-[350px] lg:h-[400px] object-cover" 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYsr2zo_WSdCoIZO0eNuxD_Z4JfOodEsSfd_u8ZbF5vDG77QPp1w8_9IgUnQRSNy7FkoFA8tipE-eMTkbl3I39f1oGb-hfNdxW6_Y9UKHysb1oT-SlsPvu8vCL_tNyhtLD0jzT_OXHnUBY-JjSMf2S6bxKpHE5DaUvQBvVV0Je6AF8NTRMCmnPXBOaWdvEi4XPGwIOAc7OG7UA-HCHQfpPVa6Fe1YvJDfTfxvI8Hl7ilQQPHav3pNh-Oa3S9Vn2N3Ua7e4ZBs5y9ed"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-[#a2adc4]/10 max-w-[240px]">
+              <div className="absolute -bottom-5 -left-5 bg-white p-5 rounded-xl shadow-xl border border-[#a2adc4]/10 max-w-[220px]">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-[#4647d3]/10 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[#4647d3]" style={iconStyle}>psychology</span>
+                  <div className="w-8 h-8 rounded-full bg-[#4647d3]/10 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[#4647d3] text-sm" style={iconStyle}>psychology</span>
                   </div>
                   <span className="font-bold text-sm text-[#242f41]">Active Insights</span>
                 </div>
@@ -128,9 +128,6 @@ export default function AISolutions() {
               <p className="text-slate-500 font-body leading-relaxed mb-8">
                 Deploy custom LLM-powered pipelines that handle document processing, data extraction, and repetitive decision-making tasks.
               </p>
-              <Link className="text-[#4647d3] font-bold inline-flex items-center gap-2 group/link">
-                Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
-              </Link>
             </div>
 
             {/* Card 2 */}
@@ -142,9 +139,6 @@ export default function AISolutions() {
               <p className="text-slate-500 font-body leading-relaxed mb-8">
                 Autonomous digital workers that navigate your existing software stack to complete complex, multi-step business objectives.
               </p>
-              <Link className="text-[#6a37d4] font-bold inline-flex items-center gap-2 group/link">
-                Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
-              </Link>
             </div>
 
             {/* Card 3 */}
@@ -156,14 +150,12 @@ export default function AISolutions() {
               <p className="text-slate-500 font-body leading-relaxed mb-8">
                 Enterprise-grade conversational interfaces that provide instant support and lead generation with human-like understanding.
               </p>
-              <Link className="text-[#4647d3] font-bold inline-flex items-center gap-2 group/link">
-                Learn more <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" style={iconStyle}>arrow_forward</span>
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Recent Successes Section */}
       {/* Recent Successes Section */}
       <section className="py-24 px-6 bg-[#f4f6ff]">
         <div className="max-w-7xl mx-auto">
@@ -177,42 +169,62 @@ export default function AISolutions() {
             </Link>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-10">
+          {/* Changed to md:grid-cols-3 and gap-8 for a smaller, 3-column layout */}
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Project 1 */}
             <Link to="/work/ai-solutions" className="block group cursor-pointer">
-              <div className="overflow-hidden rounded-xl aspect-[16/10] mb-8 shadow-lg">
+              <div className="overflow-hidden rounded-xl aspect-[16/10] mb-6 shadow-lg">
                 <img 
                   alt="FinTech Dashboard" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQRH2YRiHh1q9-W9vGb1dFBTGerGTJpKF3N2TNXjUjpama0Q2cOYc3sHr43sA3hrG7EOoaBcdH7Wi4GyUzShm0brHISEyxPhs1dVFVhWO4nRkMF5f_wEVap_oPKhok2PvScTisTL_L1l92PM1rN207rV9s4Yd3T144LlYmjk3ouNGgS4VPyH8UvRndxrI-gEV-zLG64y_x6CQUNoYSvhlE7fpjyIwkYPMQ7-2UWHIhgvlyW09BTmWM3CAKoEZxbsC71pRzLuf4Iwkv"
                 />
               </div>
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-4 flex-wrap">
                 <span className="px-3 py-1 bg-[#4647d3]/10 text-[#4647d3] text-[10px] font-extrabold uppercase tracking-widest rounded-full">Automation</span>
                 <span className="text-sm font-bold text-[#6a37d4]">85% Efficiency Boost</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#242f41] group-hover:text-[#4647d3] transition-colors">FinTech Transaction Intelligence</h3>
-              <p className="text-[#515c70] font-body leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">FinTech Transaction Intelligence</h3>
+              <p className="text-[#515c70] text-sm font-body leading-relaxed">
                 Implemented an AI agent layer that automates 90% of manual transaction reconciliation, saving over 40 hours per week for the finance team.
               </p>
             </Link>
 
             {/* Project 2 */}
             <Link to="/work/ai-solutions" className="block group cursor-pointer">
-              <div className="overflow-hidden rounded-xl aspect-[16/10] mb-8 shadow-lg">
+              <div className="overflow-hidden rounded-xl aspect-[16/10] mb-6 shadow-lg">
                 <img 
                   alt="Support Team" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVzq1tYmCrRL3R4TgQBxC1MddFeghmkLT-9OSEiE-RQvUV3A0NC86wgJOwX1dx7HqVa9dI9s0Fe7sxHEgdDz8NiatnTM_lX86tq2mSj5VARxXBhslgk8AaPBILk2ouc12ODagxzrgeROZgzxADZkzk1TLBdHVL36CP7QDL1QZsG-p4w6UoB61VI0PUx3kX0JYJY_vu2K1y1df1phLpDYOZM6yEGm4uJ_F8rm9qzUXNjZqh3YCFk6CGl-CuS_Ea-MMxvPrYEqwSBHR9"
                 />
               </div>
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-4 flex-wrap">
                 <span className="px-3 py-1 bg-[#6a37d4]/10 text-[#6a37d4] text-[10px] font-extrabold uppercase tracking-widest rounded-full">Chatbots</span>
                 <span className="text-sm font-bold text-[#4647d3]">Instant Response</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#242f41] group-hover:text-[#4647d3] transition-colors">SaaS Support Scale-up</h3>
-              <p className="text-[#515c70] font-body leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">SaaS Support Scale-up</h3>
+              <p className="text-[#515c70] text-sm font-body leading-relaxed">
                 Deployed a custom-trained chatbot that resolved 65% of customer inquiries without human intervention, maintaining a 98% CSAT score.
+              </p>
+            </Link>
+
+            {/* Project 3 (New) */}
+            <Link to="/work/ai-solutions" className="block group cursor-pointer">
+              <div className="overflow-hidden rounded-xl aspect-[16/10] mb-6 shadow-lg">
+                <img 
+                  alt="Supply Chain Orchestration" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGBYltWU_SwxDEU8FcoWUdJXft9g3NV1huT4Exz67rHrKjsjQpJZkKRenKtvJJEqmLjUL3xvk41e7ngjUIxoTFKiqjcGl20CJIlfZzKIIvM2MrZtDZQNVK6zj3OZJDkg-hBb0E7jXrqOXm7i_40-gSRGV4hD4GfeZ7KMydV_OJfvpOKaarFabtgY6-pZnTT8zV71Wgv1IMYZyg8dQtTBJ5BxiWgGF0yzXcRg7CmWig7ezn4agHnwpd_TNyB1cSqqTlD79HGqGjMY-F"
+                />
+              </div>
+              <div className="flex items-center gap-3 mb-4 flex-wrap">
+                <span className="px-3 py-1 bg-[#4647d3]/10 text-[#4647d3] text-[10px] font-extrabold uppercase tracking-widest rounded-full">AI Agents</span>
+                <span className="text-sm font-bold text-[#6a37d4]">24/7 Operation</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">Autonomous Supply Chain</h3>
+              <p className="text-[#515c70] text-sm font-body leading-relaxed">
+                Engineered a multi-agent system that autonomously routes logistics and manages inventory, predicting bottlenecks before they occur.
               </p>
             </Link>
           </div>

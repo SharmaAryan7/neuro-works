@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import  { Link } from 'react-router-dom';
 
 export default function ServicesOverview() {
   // Initialize the navigate function
@@ -35,12 +36,12 @@ export default function ServicesOverview() {
             From AI automation to development and growth systems — we build everything you need to grow efficiently in the age of intelligence.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button 
+            <Link  to='/contact'
               style={primaryGradientBg} 
               className="text-[#f4f1ff] px-8 py-4 rounded-xl font-headline font-bold text-base active:scale-95 transition-transform shadow-xl shadow-[#4647d3]/25"
             >
               Get Started
-            </button>
+            </Link>
             <button 
               onClick={() => navigate('/work')}
               className="bg-[#cdddfe] text-[#242f41] px-8 py-4 rounded-xl font-headline font-bold text-base hover:bg-[#d5e3ff] transition-colors"

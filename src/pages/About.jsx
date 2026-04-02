@@ -20,23 +20,24 @@ export default function About() {
     <div className="bg-[#f4f6ff] text-[#242f41] font-body min-h-screen">
       <div className="pt-20">
         
-        {/* Hero Section */}
-        <section className="relative overflow-hidden bg-[#f4f6ff] py-24 md:py-32">
+        {/* Hero Section (Sizes Adjusted) */}
+        <section className="relative overflow-hidden bg-[#f4f6ff] py-16 md:py-20">
           {/* Signature soft purple-blue gradient glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-[#4647d3]/10 blur-[120px] rounded-full -z-10"></div>
           
           <div className="max-w-7xl mx-auto px-6 text-center">
-            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#9396ff]/30 border border-[#4647d3]/10 text-[#4647d3] font-label text-xs font-bold tracking-[0.1em] mb-8 uppercase">
+            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#9396ff]/30 border border-[#4647d3]/10 text-[#4647d3] font-label text-[11px] font-bold tracking-[0.1em] mb-6 uppercase">
               ABOUT US
             </div>
-            <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-[#242f41] mb-8 max-w-4xl mx-auto leading-[1.1]">
+            <h1 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-[#242f41] mb-6 max-w-4xl mx-auto leading-[1.2]">
               Building Intelligent Systems for <span style={gradientText}>Modern Businesses</span>
             </h1>
-            <p className="text-lg md:text-xl text-[#515c70] max-w-2xl mx-auto leading-relaxed mb-12">
+            <p className="text-base md:text-lg text-[#515c70] max-w-2xl mx-auto leading-relaxed mb-10">
               We bridge the gap between human intuition and machine intelligence, crafting bespoke AI solutions that transform how global enterprises operate, scale, and innovate.
             </p>
             
-            <div className="relative w-full aspect-[21/9] mt-16 rounded-3xl overflow-hidden shadow-2xl border border-[#a2adc4]/10">
+            {/* Constrained Image Size */}
+            <div className="relative w-full max-w-5xl mx-auto h-[300px] md:h-[400px] mt-10 rounded-3xl overflow-hidden shadow-2xl border border-[#a2adc4]/10">
               <img 
                 className="w-full h-full object-cover" 
                 alt="High-tech laboratory" 
@@ -116,26 +117,25 @@ export default function About() {
         </section>
 
         {/* Final CTA Section */}
-
-      <section className="py-32 px-8">
-        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
-          <div className="absolute inset-0 btn-gradient opacity-10"></div>
-          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Let’s Build Something Great Together</h2>
-            <p className="text-lg text-inverse-on-surface/80">
-                Join the ranks of forward-thinking enterprises that have redefined their industry with our intelligent systems.
-            </p>
-            <div className="pt-8">
-              <Link to="/contact" className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
-                Book a Call
-              </Link>
+        <section className="py-32 px-8">
+          <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+            <div className="absolute inset-0 btn-gradient opacity-10"></div>
+            <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Let’s Build Something Great Together</h2>
+              <p className="text-lg text-inverse-on-surface/80">
+                  Join the ranks of forward-thinking enterprises that have redefined their industry with our intelligent systems.
+              </p>
+              <div className="pt-8">
+                <Link to="/contact" className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+                  Book a Call
+                </Link>
+              </div>
             </div>
+            {/* Background Decorative Elements */}
+            <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
+            <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
           </div>
-          {/* Background Decorative Elements */}
-          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20"></div>
-          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20"></div>
-        </div>
-      </section>
+        </section>
       </div>
     </div>
   );

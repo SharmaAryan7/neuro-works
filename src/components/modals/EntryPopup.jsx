@@ -1,4 +1,8 @@
+import { Link, useNavigate } from 'react-router-dom';
+
 export default function EntryPopup({ isOpen, onClose }) {
+  const navigate = useNavigate();
+
   if (!isOpen) return null;
 
   return (
@@ -57,10 +61,20 @@ export default function EntryPopup({ isOpen, onClose }) {
 
                 {/* Action Cluster */}
                 <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
-                  <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white font-semibold rounded-xl shadow-lg shadow-[#4647d3]/20 hover:shadow-xl hover:shadow-[#4647d3]/30 active:scale-95 transition-all duration-300">
+                  <Link 
+                    to="/contact"
+                    onClick={onClose}
+                    className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white font-semibold rounded-xl shadow-lg shadow-[#4647d3]/20 hover:shadow-xl hover:shadow-[#4647d3]/30 active:scale-95 transition-all duration-300 text-center block"
+                  >
                     Book a Call
-                  </button>
-                  <button className="w-full sm:w-auto px-8 py-4 bg-[#ffffff] border-2 border-[#d5e3ff] text-[#242f41] font-semibold rounded-xl hover:bg-[#ecf1ff] hover:border-[#cdddfe] transition-all duration-300 active:scale-95">
+                  </Link>
+                  <button 
+                    onClick={() => {
+                      navigate('/services');
+                      onClose();
+                    }}
+                    className="w-full sm:w-auto px-8 py-4 bg-[#ffffff] border-2 border-[#d5e3ff] text-[#242f41] font-semibold rounded-xl hover:bg-[#ecf1ff] hover:border-[#cdddfe] transition-all duration-300 active:scale-95"
+                  >
                     Explore Services
                   </button>
                 </div>

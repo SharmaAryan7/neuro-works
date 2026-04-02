@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   // State to manage which FAQ is open
-  const [openFaq, setOpenFaq] = useState(0);
+  const [openFaq, setOpenFaq] = useState(null);
 
   const faqs = [
     {
@@ -216,6 +216,7 @@ export default function Home() {
       </section>
 
       {/* Featured Work */}
+{/* Featured Work */}
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-end mb-16">
@@ -227,7 +228,8 @@ export default function Home() {
               View All Work <span className="material-symbols-outlined">arrow_forward</span>
             </Link>
           </div>
-          <div className="grid md:grid-cols-2 gap-12">
+          {/* Changed md:grid-cols-2 to md:grid-cols-3 and adjusted gap to 8 for better spacing */}
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Work 1 */}
             <div className="group space-y-6 cursor-pointer">
               <div className="overflow-hidden rounded-[2rem] bg-surface-container-high aspect-[4/3] relative">
@@ -264,10 +266,27 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* Work 3 (New) */}
+            <div className="group space-y-6 cursor-pointer">
+              <div className="overflow-hidden rounded-[2rem] bg-surface-container-high aspect-[4/3] relative">
+                <img alt="Growth Systems Project" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="http://googleusercontent.com/profile/picture/9" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="glass-panel p-6 rounded-2xl flex items-center justify-between border-white/20">
+                    <div>
+                      <div className="text-xs font-bold text-tertiary uppercase tracking-widest mb-1">Growth Systems</div>
+                      <div className="text-xl font-bold font-headline">Nexus Analytics Platform</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-3xl font-extrabold text-tertiary">2.5M</div>
+                      <div className="text-[10px] font-bold text-on-surface-variant uppercase">Active Users</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
       {/* Testimonials */}
       <section className="py-32 bg-surface">
         <div className="max-w-7xl mx-auto px-8">
