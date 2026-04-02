@@ -10,6 +10,19 @@ export default function Navbar() {
   // Triggers the local nav for /work AND all its subpages
   const isWorkSection = currentPath.startsWith('/work');
 
+  // Determine Logo Text and Link based on subpage status
+  let logoText = "Neuro Works AI";
+  let logoLink = "/";
+
+  // Check if we are on a SUBPAGE of Services or Work (ignores exactly '/services' or '/work')
+  if (currentPath.startsWith('/services') && currentPath !== '/services' && currentPath !== '/services/') {
+    logoText = "Services";
+    logoLink = "/services";
+  } else if (currentPath.startsWith('/work') && currentPath !== '/work' && currentPath !== '/work/') {
+    logoText = "Work";
+    logoLink = "/work";
+  }
+
   // Custom styling for the CTA button
   const ctaGradient = {
     background: 'linear-gradient(135deg, #4647d3 0%, #6a37d4 100%)'
@@ -19,9 +32,13 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-[rgba(255,255,255,0.7)] backdrop-blur-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-b border-[rgba(255,255,255,0.3)] transition-all duration-300">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
         
-        {/* Logo always goes Home */}
-        <Link to="/" className="text-xl font-bold tracking-tighter text-[#242f41] font-headline">
-          Neuro Works AI
+        {/* Dynamic Logo based on page level */}
+        <Link to={logoLink} className="text-xl font-bold tracking-tighter text-[#242f41] font-headline flex items-center gap-1.5 hover:text-[#4647d3] transition-colors">
+          {/* Add a subtle back arrow if we are on a subpage */}
+          {logoText !== "Neuro Works AI" && (
+            <span className="material-symbols-outlined text-[20px]">arrow_back_ios_new</span>
+          )}
+          {logoText}
         </Link>
         
         <div className="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">

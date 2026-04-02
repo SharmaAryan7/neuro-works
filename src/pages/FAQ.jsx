@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import ScrollReveal from '../components/ScrollReveal';
 
 export default function FAQ() {
   // Custom inline styles for reliable rendering
@@ -63,20 +64,22 @@ export default function FAQ() {
       <main className="pt-20">
         
         {/* Hero Section */}
-        <section className="relative overflow-hidden py-24 md:py-32">
-          <div style={faqGradientBg} className="absolute inset-0 -z-10"></div>
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.05em] uppercase bg-[#dac9ff] text-[#5517bf] rounded-full font-label">
-              FAQ
-            </span>
-            <h1 className="text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-[#242f41] mb-8 leading-[1.1]">
-              Frequently Asked <span className="text-[#4647d3]">Questions</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#515c70] max-w-2xl mx-auto font-body leading-relaxed">
-              Find answers to common questions about our services and process. We’re here to help you navigate the future of intelligent automation.
-            </p>
-          </div>
-        </section>
+        <ScrollReveal direction="up">
+          <section className="relative overflow-hidden py-24 md:py-32">
+            <div style={faqGradientBg} className="absolute inset-0 -z-10"></div>
+            <div className="max-w-4xl mx-auto px-6 text-center">
+              <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.05em] uppercase bg-[#dac9ff] text-[#5517bf] rounded-full font-label">
+                FAQ
+              </span>
+              <h1 className="text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-[#242f41] mb-8 leading-[1.1]">
+                Frequently Asked <span className="text-[#4647d3]">Questions</span>
+              </h1>
+              <p className="text-lg md:text-xl text-[#515c70] max-w-2xl mx-auto font-body leading-relaxed">
+                Find answers to common questions about our services and process. We’re here to help you navigate the future of intelligent automation.
+              </p>
+            </div>
+          </section>
+        </ScrollReveal>
 
         {/* FAQ List Section */}
         <section className="pb-24">
@@ -85,27 +88,28 @@ export default function FAQ() {
               
               {/* Mapping over the FAQ array */}
               {faqs.map((faq, index) => (
-                <details 
-                  key={index} 
-                  className="group bg-[#ffffff] rounded-xl shadow-sm border border-[#a2adc4]/10 overflow-hidden"
-                  // Automatically open the very first FAQ item
-                  open={index === 0} 
-                >
-                  <summary className="flex items-center justify-between p-6 cursor-pointer list-none outline-none">
-                    <h3 className="text-lg font-semibold text-[#242f41] font-headline pr-4">
-                      {faq.question}
-                    </h3>
-                    <span 
-                      className="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-[#6c778c]" 
-                      style={iconStyle}
-                    >
-                      expand_more
-                    </span>
-                  </summary>
-                  <div className="px-6 pb-6 text-[#515c70] leading-relaxed">
-                    {faq.answer}
-                  </div>
-                </details>
+                <ScrollReveal direction="up" delay={index * 0.05} key={index}>
+                  <details 
+                    className="group bg-[#ffffff] rounded-xl shadow-sm border border-[#a2adc4]/10 overflow-hidden"
+                    // Automatically open the very first FAQ item
+                    open={index === 0} 
+                  >
+                    <summary className="flex items-center justify-between p-6 cursor-pointer list-none outline-none">
+                      <h3 className="text-lg font-semibold text-[#242f41] font-headline pr-4">
+                        {faq.question}
+                      </h3>
+                      <span 
+                        className="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-[#6c778c]" 
+                        style={iconStyle}
+                      >
+                        expand_more
+                      </span>
+                    </summary>
+                    <div className="px-6 pb-6 text-[#515c70] leading-relaxed">
+                      {faq.answer}
+                    </div>
+                  </details>
+                </ScrollReveal>
               ))}
 
             </div>
@@ -113,25 +117,25 @@ export default function FAQ() {
         </section>
 
         {/* Final CTA Section */}
-
-
-    <section className="py-32 px-8">
-        <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
-          <div className="absolute inset-0 btn-gradient opacity-10"></div>
-          <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Still have questions?</h2>
-            <p className="text-lg text-inverse-on-surface/80">If you couldn't find what you were looking for, our team is ready to provide the specific insights your business needs.</p>
-            <div className="pt-8">
-              <Link to="/contact" className="inline-block btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
-                Book a Call
-              </Link>
+        <ScrollReveal direction="up">
+          <section className="py-32 px-8">
+            <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
+              <div className="absolute inset-0 btn-gradient opacity-10"></div>
+              <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
+                <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Still have questions?</h2>
+                <p className="text-lg text-inverse-on-surface/80">If you couldn't find what you were looking for, our team is ready to provide the specific insights your business needs.</p>
+                <div className="pt-8">
+                  <Link to="/contact" className="inline-block btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">
+                    Book a Call
+                  </Link>
+                </div>
+              </div>
+              {/* Background Decorative Elements */}
+              <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
+              <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
             </div>
-          </div>
-          {/* Background Decorative Elements */}
-          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
-          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
-        </div>
-      </section>
+          </section>
+        </ScrollReveal>
 
       </main>
     </div>
