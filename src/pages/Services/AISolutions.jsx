@@ -32,11 +32,11 @@ export default function AISolutions() {
                 AI SOLUTIONS
               </span>
               <h1 className="text-4xl lg:text-5xl font-extrabold font-headline tracking-tight leading-[1.2] text-[#242f41]">
-                AI Solutions That <br />
-                <span style={gradientText}>Automate and Scale</span>
+                AI systems that simplify <br />
+                <span style={gradientText}>work and help you scale</span>
               </h1>
               <p className="text-base lg:text-lg text-[#515c70] max-w-lg font-body leading-relaxed mx-auto lg:mx-0">
-                We build intelligent systems that streamline workflows, reduce manual work, and help your business operate efficiently.
+                We build AI-powered systems that streamline workflows, reduce manual effort, and help your business run more efficiently.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
                 <Link 
@@ -86,7 +86,7 @@ export default function AISolutions() {
             <div className="max-w-3xl mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold font-headline mb-6 text-slate-900">What We Do</h2>
               <p className="text-lg text-slate-500 font-body leading-relaxed">
-                In an era of rapid digital transformation, we help organizations harness the power of artificial intelligence to redefine their operational boundaries. Our approach integrates cognitive automation directly into your core business logic, transforming bottlenecks into growth engines.
+                We help businesses use AI in a practical way — improving how work gets done, removing bottlenecks, and making operations smoother. Our focus is simple: build systems that fit into your business and actually make a difference.
               </p>
             </div>
           </ScrollReveal>
@@ -100,7 +100,7 @@ export default function AISolutions() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold mb-2 text-[#242f41]">Workflow Orchestration</h4>
-                    <p className="text-[#515c70] leading-relaxed">End-to-end automation of complex business processes, reducing cycle times by up to 60%.</p>
+                    <p className="text-[#515c70] leading-relaxed">We automate end-to-end processes so tasks move faster and require less manual effort.</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -112,7 +112,7 @@ export default function AISolutions() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold mb-2 text-[#242f41]">Efficiency Optimization</h4>
-                    <p className="text-[#515c70] leading-relaxed">Continuous monitoring and self-adjusting systems that improve resource allocation in real-time.</p>
+                    <p className="text-[#515c70] leading-relaxed">We build systems that monitor performance and adjust in real time to improve efficiency.</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -127,7 +127,7 @@ export default function AISolutions() {
           <ScrollReveal direction="up">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold font-headline mb-4 text-[#242f41]">Core AI Capabilities</h2>
-              <p className="text-[#515c70]">Specialized intelligent systems designed for modern enterprise needs.</p>
+              <p className="text-[#515c70]">Practical AI solutions built for real business needs.</p>
             </div>
           </ScrollReveal>
           
@@ -140,7 +140,7 @@ export default function AISolutions() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 font-headline text-slate-900">AI Automation</h3>
                 <p className="text-slate-500 font-body leading-relaxed mb-8">
-                  Deploy custom LLM-powered pipelines that handle document processing, data extraction, and repetitive decision-making tasks.
+                  We create systems that handle repetitive tasks like data processing, document handling, and routine decisions.
                 </p>
               </div>
             </ScrollReveal>
@@ -153,7 +153,7 @@ export default function AISolutions() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 font-headline text-slate-900">AI Agents</h3>
                 <p className="text-slate-500 font-body leading-relaxed mb-8">
-                  Autonomous digital workers that navigate your existing software stack to complete complex, multi-step business objectives.
+                  Digital agents that can navigate your tools and complete multi-step tasks automatically.
                 </p>
               </div>
             </ScrollReveal>
@@ -166,7 +166,7 @@ export default function AISolutions() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 font-headline text-slate-900">Chatbots</h3>
                 <p className="text-slate-500 font-body leading-relaxed mb-8">
-                  Enterprise-grade conversational interfaces that provide instant support and lead generation with human-like understanding.
+                  Conversational systems that handle support, answer questions, and capture leads.
                 </p>
               </div>
             </ScrollReveal>
@@ -180,8 +180,8 @@ export default function AISolutions() {
           <ScrollReveal direction="up">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div>
-                <h2 className="text-3xl lg:text-4xl font-bold font-headline mb-4 text-slate-900">Recent Successes</h2>
-                <p className="text-lg text-slate-500">Real impact delivered through intelligent systems</p>
+                <h2 className="text-3xl lg:text-4xl font-bold font-headline mb-4 text-slate-900">Recent Work</h2>
+                <p className="text-lg text-slate-500">Real impact delivered through AI systems.</p>
               </div>
               <Link to="/work/ai-solutions" className="inline-flex items-center gap-2 font-bold text-[#4647d3] hover:text-[#6a37d4] transition-colors">
                 View All AI Projects <span className="material-symbols-outlined" style={iconStyle}>arrow_forward</span>
@@ -202,11 +202,11 @@ export default function AISolutions() {
                 </div>
                 <div className="flex items-center gap-3 mb-4 flex-wrap">
                   <span className="px-3 py-1 bg-[#4647d3]/10 text-[#4647d3] text-[10px] font-extrabold uppercase tracking-widest rounded-full">Automation</span>
-                  <span className="text-sm font-bold text-[#6a37d4]">85% Efficiency Boost</span>
+                  <span className="text-sm font-bold text-[#6a37d4]">85% efficiency improvement</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">FinTech Transaction Intelligence</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">FinTech Dashboard</h3>
                 <p className="text-[#515c70] text-sm font-body leading-relaxed">
-                  Implemented an AI agent layer that automates 90% of manual transaction reconciliation, saving over 40 hours per week for the finance team.
+                  We built a system that automates transaction reconciliation, saving hours of manual work every week.
                 </p>
               </Link>
             </ScrollReveal>
@@ -223,11 +223,11 @@ export default function AISolutions() {
                 </div>
                 <div className="flex items-center gap-3 mb-4 flex-wrap">
                   <span className="px-3 py-1 bg-[#6a37d4]/10 text-[#6a37d4] text-[10px] font-extrabold uppercase tracking-widest rounded-full">Chatbots</span>
-                  <span className="text-sm font-bold text-[#4647d3]">Instant Response</span>
+                  <span className="text-sm font-bold text-[#4647d3]">Instant response</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">SaaS Support Scale-up</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">Support Team</h3>
                 <p className="text-[#515c70] text-sm font-body leading-relaxed">
-                  Deployed a custom-trained chatbot that resolved 65% of customer inquiries without human intervention, maintaining a 98% CSAT score.
+                  We deployed a chatbot that handles most customer queries automatically while maintaining high satisfaction.
                 </p>
               </Link>
             </ScrollReveal>
@@ -244,11 +244,11 @@ export default function AISolutions() {
                 </div>
                 <div className="flex items-center gap-3 mb-4 flex-wrap">
                   <span className="px-3 py-1 bg-[#4647d3]/10 text-[#4647d3] text-[10px] font-extrabold uppercase tracking-widest rounded-full">AI Agents</span>
-                  <span className="text-sm font-bold text-[#6a37d4]">24/7 Operation</span>
+                  <span className="text-sm font-bold text-[#6a37d4]">24/7 operations</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">Autonomous Supply Chain</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#242f41] group-hover:text-[#4647d3] transition-colors">Supply Chain System</h3>
                 <p className="text-[#515c70] text-sm font-body leading-relaxed">
-                  Engineered a multi-agent system that autonomously routes logistics and manages inventory, predicting bottlenecks before they occur.
+                  We developed a system that manages logistics and inventory, helping teams avoid delays and operate more smoothly.
                 </p>
               </Link>
             </ScrollReveal>
@@ -262,8 +262,8 @@ export default function AISolutions() {
           <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
             <div className="absolute inset-0 btn-gradient opacity-10"></div>
             <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Ready to Automate Your Business?</h2>
-              <p className="text-lg text-inverse-on-surface/80">Let’s build intelligent systems tailored to your needs. Our team is ready to help you scale through smart automation.</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Ready to automate your business?</h2>
+              <p className="text-lg text-inverse-on-surface/80">Let's build systems that reduce manual work and help you scale more efficiently.</p>
               <div className="pt-8">
                 <Link 
                   to="/contact" 

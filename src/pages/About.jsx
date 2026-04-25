@@ -32,10 +32,10 @@ export default function About() {
                 ABOUT US
               </div>
               <h1 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-[#242f41] mb-6 max-w-4xl mx-auto leading-[1.2]">
-                Building Intelligent Systems for <span style={gradientText}>Modern Businesses</span>
+                Building smarter systems for <span style={gradientText}>modern businesses</span>
               </h1>
               <p className="text-base md:text-lg text-[#515c70] max-w-2xl mx-auto leading-relaxed mb-10">
-                We bridge the gap between human intuition and machine intelligence, crafting bespoke AI solutions that transform how global enterprises operate, scale, and innovate.
+                We design AI systems and automation that help businesses operate better, scale efficiently, and make smarter decisions without unnecessary complexity.
               </p>
               
               {/* Constrained Image Size */}
@@ -61,7 +61,7 @@ export default function About() {
                   <h2 className="font-headline text-3xl font-bold text-[#242f41]">Our Story</h2>
                   <div style={gradientBg} className="w-12 h-1.5 rounded-full"></div>
                   <p className="text-lg leading-relaxed text-[#515c70]">
-                    Founded at the intersection of neuroscience and computational engineering, Neuro Works AI began with a singular mission: to make advanced artificial intelligence accessible and actionable. We saw companies struggling with fragmented data and rigid software, so we built a laboratory for the future.
+                    Neuro Works AI started with a simple idea: businesses shouldn't struggle with disconnected tools and manual work. We saw teams spending too much time managing systems instead of growing their business. So we focused on building solutions that simplify operations and actually make a difference day-to-day. Today, we work with companies to turn messy workflows into clean, scalable systems powered by AI and solid engineering.
                   </p>
                 </div>
               </ScrollReveal>
@@ -71,7 +71,8 @@ export default function About() {
                   <h2 className="font-headline text-3xl font-bold text-[#242f41]">Our Vision</h2>
                   <div style={gradientBg} className="w-12 h-1.5 rounded-full"></div>
                   <p className="text-lg leading-relaxed text-[#515c70]">
-                    We envision a world where AI doesn't replace human creativity but amplifies it. Our goal is to set the global standard for ethical, high-performance intelligence systems that solve the most complex challenges of the 21st century.
+                    We believe AI should support people — not replace them.<br /><br />
+                    Our goal is to build systems that make businesses faster, more efficient, and easier to scale, while keeping the human side of decision-making intact.
                   </p>
                 </div>
               </ScrollReveal>
@@ -85,7 +86,7 @@ export default function About() {
             <ScrollReveal direction="up">
               <div className="text-center mb-16">
                 <h2 className="font-headline text-4xl font-bold text-[#242f41] mb-4">Why Choose Us</h2>
-                <p className="text-[#515c70]">Excellence through precision and purpose-built technology.</p>
+                <p className="text-[#515c70]">We focus on building systems that are practical, scalable, and built to deliver real results.</p>
               </div>
             </ScrollReveal>
             
@@ -97,7 +98,7 @@ export default function About() {
                     <span className="material-symbols-outlined text-3xl" style={iconStyle}>neurology</span>
                   </div>
                   <h3 className="font-headline font-bold text-xl text-[#242f41] mb-3">Smart Systems</h3>
-                  <p className="text-sm leading-relaxed text-[#515c70]">Advanced neural architectures designed to think beyond simple automation.</p>
+                  <p className="text-sm leading-relaxed text-[#515c70]">We design systems that go beyond basic automation — helping your business run more intelligently.</p>
                 </div>
               </ScrollReveal>
               
@@ -108,7 +109,7 @@ export default function About() {
                     <span className="material-symbols-outlined text-3xl" style={iconStyle}>cloud_done</span>
                   </div>
                   <h3 className="font-headline font-bold text-xl text-[#242f41] mb-3">Scalable Solutions</h3>
-                  <p className="text-sm leading-relaxed text-[#515c70]">Cloud-native infrastructure that grows seamlessly alongside your enterprise.</p>
+                  <p className="text-sm leading-relaxed text-[#515c70]">Our solutions are built to grow with your business, without needing constant rebuilds.</p>
                 </div>
               </ScrollReveal>
               
@@ -119,7 +120,7 @@ export default function About() {
                     <span className="material-symbols-outlined text-3xl" style={iconStyle}>trending_up</span>
                   </div>
                   <h3 className="font-headline font-bold text-xl text-[#242f41] mb-3">Results-Driven</h3>
-                  <p className="text-sm leading-relaxed text-[#515c70]">Measurable ROI and concrete efficiency gains through intelligent analytics.</p>
+                  <p className="text-sm leading-relaxed text-[#515c70]">We focus on outcomes — improving efficiency, reducing manual work, and supporting growth.</p>
                 </div>
               </ScrollReveal>
 
@@ -130,7 +131,7 @@ export default function About() {
                     <span className="material-symbols-outlined text-3xl" style={iconStyle}>auto_awesome</span>
                   </div>
                   <h3 className="font-headline font-bold text-xl text-[#242f41] mb-3">Modern Approach</h3>
-                  <p className="text-sm leading-relaxed text-[#515c70]">User-centric design meeting cutting-edge AI for an intuitive experience.</p>
+                  <p className="text-sm leading-relaxed text-[#515c70]">We combine clean design with reliable technology to create systems that are easy to use and effective.</p>
                 </div>
               </ScrollReveal>
             </div>
@@ -143,9 +144,9 @@ export default function About() {
             <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
               <div className="absolute inset-0 btn-gradient opacity-10"></div>
               <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
-                <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Let’s Build Something Great Together</h2>
+                <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight">Let's Build Something That Works</h2>
                 <p className="text-lg text-inverse-on-surface/80">
-                    Join the ranks of forward-thinking enterprises that have redefined their industry with our intelligent systems.
+                  Work with a team that focuses on clarity, performance, and long-term scalability not just ideas.
                 </p>
                 <div className="pt-8">
                   <Link to="/contact" className="btn-gradient text-white px-12 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 transition-all">

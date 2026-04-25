@@ -32,10 +32,10 @@ export default function ServicesOverview() {
           </div>
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="font-headline font-extrabold text-5xl md:text-7xl tracking-tight text-[#242f41] mb-8 leading-[1.1]">
-              Services Designed to <span style={gradientText}>Scale Your Business</span>
+              Services built to help your business <span style={gradientText}>grow</span>
             </h1>
             <p className="text-[#515c70] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-12">
-              From AI automation to development and growth systems — we build everything you need to grow efficiently in the age of intelligence.
+              From AI automation to development and growth systems — we build the tools and systems you need to run better and scale with confidence.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <Link  to='/contact'
@@ -68,7 +68,7 @@ export default function ServicesOverview() {
                   AI SOLUTIONS
                 </div>
                 <h2 className="font-headline font-bold text-4xl text-[#242f41] leading-tight">
-                  We build intelligent systems that automate workflows and reduce manual work.
+                  We build AI systems that reduce manual work and simplify how your business operates.
                 </h2>
                 <div className="flex flex-wrap gap-3">
                   <span className="px-4 py-1.5 bg-[#ffffff] text-[#515c70] rounded-full text-sm font-medium border border-[#a2adc4]/10">AI Automation</span>
@@ -76,7 +76,7 @@ export default function ServicesOverview() {
                   <span className="px-4 py-1.5 bg-[#ffffff] text-[#515c70] rounded-full text-sm font-medium border border-[#a2adc4]/10">Chatbots</span>
                 </div>
                 <p className="text-[#515c70] text-lg leading-relaxed">
-                  Our AI practice focuses on tangible ROI. We integrate custom neural architectures into your existing stack to eliminate bottlenecks and empower your team.
+                  Our focus is simple: build systems that actually improve how your team works. We integrate AI into your existing tools to remove bottlenecks and make processes faster and more reliable.
                 </p>
                 <button 
                   onClick={() => navigate('/services/ai-solutions')}
@@ -115,7 +115,7 @@ export default function ServicesOverview() {
                 <div className="bg-[#ffffff] p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                   <img className="w-full h-40 object-cover rounded-lg mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWCyoagO2H1v5xmE_WM9ejn3TxLDXY0ZhTVGwru1oJxhnm6NL1UIJ3ekmVM7JRNvGP0IZ37ZouPQQKNFYnGSX4gxpK9nL_adpzir9B_mBN_6WMalYduQaFTXQdmR41gEIt_wlD2U9egD41mJO2oKSpMy05Kc3yYvwnKT3rXW82DAo5mqumXQnYPcGaAHE97SjNgTpRuHOB764ikRyf8aphTZ3YJGznXcNpfK3vZ43N3lPUNoW9c60ySrqqqOEyzeigYw1RSdMObdgH" alt="Custom CRM" />
                   <h4 className="font-headline font-bold text-[#242f41] mb-2">Custom CRM</h4>
-                  <p className="text-sm text-[#4647d3] font-semibold">Infrastructure cost cut by 40%</p>
+                  <p className="text-sm text-[#4647d3] font-semibold">Infrastructure cost reduced by 40%</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -126,14 +126,14 @@ export default function ServicesOverview() {
                   DEVELOPMENT
                 </div>
                 <h2 className="font-headline font-bold text-4xl text-[#242f41] leading-tight">
-                  We design and build high-performance websites and scalable platforms.
+                  We design and build fast, reliable websites and scalable platforms.
                 </h2>
                 <div className="flex flex-wrap gap-3">
                   <span className="px-4 py-1.5 bg-[#ffffff] text-[#515c70] rounded-full text-sm font-medium border border-[#a2adc4]/10">Web Development</span>
                   <span className="px-4 py-1.5 bg-[#ffffff] text-[#515c70] rounded-full text-sm font-medium border border-[#a2adc4]/10">SaaS Development</span>
                 </div>
                 <p className="text-[#515c70] text-lg leading-relaxed">
-                  Engineering excellence meets world-class design. We build secure, robust, and lightning-fast digital products that stand the test of time and scale.
+                  We focus on building products that are clean, stable, and built to grow — so you don't have to rebuild everything later.
                 </p>
                 <button 
                   onClick={() => navigate('/services/development')}
@@ -155,7 +155,7 @@ export default function ServicesOverview() {
                   GROWTH SYSTEMS
                 </div>
                 <h2 className="font-headline font-bold text-4xl text-[#242f41] leading-tight">
-                  We create systems that attract, convert, and scale your customer base.
+                  We build systems that help you attract, convert, and grow your customer base.
                 </h2>
                 <div className="flex flex-wrap gap-3">
                   <span className="px-4 py-1.5 bg-[#ffffff] text-[#515c70] rounded-full text-sm font-medium border border-[#a2adc4]/10">Sales</span>
@@ -164,7 +164,7 @@ export default function ServicesOverview() {
                   <span className="px-4 py-1.5 bg-[#ffffff] text-[#515c70] rounded-full text-sm font-medium border border-[#a2adc4]/10">Funnels</span>
                 </div>
                 <p className="text-[#515c70] text-lg leading-relaxed">
-                  Growth isn't an accident. We engineer conversion-focused ecosystems that turn attention into revenue through data-driven strategies and persuasive copy.
+                  We combine data, automation, and clear messaging to create systems that consistently bring in and convert leads.
                 </p>
                 <button 
                   onClick={() => navigate('/services/growth-systems')}
@@ -185,7 +185,7 @@ export default function ServicesOverview() {
                 <div className="bg-[#ffffff] p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                   <img className="w-full h-40 object-cover rounded-lg mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0psJ4h9H55idaSVDMhZss2K2wQM7vFEGQiJ9D8qb3yfZCx5t0aYSzkqLtg6VWJItg9XUa7fmtimDYzcaPj1MBesG68uv1lfP-CFTsiIGWsaPs6E63Rp799YZ5qKV22-3ZKXu0Ppk6ujEe0RgH8AWdAtWyPT5r-G3CxUwiWsj0U9yyWkQxhKUEdWzTHr8m-cm5By8y3JPGNXlhjmqTaWOEHaD2mnm3Rjai2Ub5pawH8BOFP4v_z-7KkzumZ4SXAchmQnZlNCdoD_Tp" alt="B2B Funnel" />
                   <h4 className="font-headline font-bold text-[#242f41] mb-2">B2B Funnel</h4>
-                  <p className="text-sm text-[#4647d3] font-semibold">200% Lead Gen Increase</p>
+                  <p className="text-sm text-[#4647d3] font-semibold">200% increase in leads</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -200,7 +200,7 @@ export default function ServicesOverview() {
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
               <h2 className="font-headline font-bold text-4xl text-[#242f41] mb-4">How We Work</h2>
-              <p className="text-[#515c70] max-w-xl mx-auto">A streamlined process designed for speed and clarity.</p>
+              <p className="text-[#515c70] max-w-xl mx-auto">A simple, clear process focused on results.</p>
             </div>
           </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-12 relative">
@@ -214,7 +214,7 @@ export default function ServicesOverview() {
                   <span className="material-symbols-outlined text-3xl" style={iconStyle}>lightbulb</span>
                 </div>
                 <h3 className="font-headline font-bold text-xl text-[#242f41]">1. Understand your goals</h3>
-                <p className="text-[#515c70] leading-relaxed">We dive deep into your business metrics and challenges to define the perfect roadmap.</p>
+                <p className="text-[#515c70] leading-relaxed">We take time to understand your business, your metrics, and where things can improve.</p>
               </div>
             </ScrollReveal>
             {/* Step 2 */}
@@ -226,8 +226,8 @@ export default function ServicesOverview() {
                 >
                   <span className="material-symbols-outlined text-3xl" style={iconStyle}>construction</span>
                 </div>
-                <h3 className="font-headline font-bold text-xl text-[#242f41]">2. Build tailored solutions</h3>
-                <p className="text-[#515c70] leading-relaxed">Our experts develop your systems using cutting-edge AI and engineering best practices.</p>
+                <h3 className="font-headline font-bold text-xl text-[#242f41]">2. Build the right system</h3>
+                <p className="text-[#515c70] leading-relaxed">We design and develop solutions tailored to your workflows and goals.</p>
               </div>
             </ScrollReveal>
             {/* Step 3 */}
@@ -239,8 +239,8 @@ export default function ServicesOverview() {
                 >
                   <span className="material-symbols-outlined text-3xl" style={iconStyle}>rocket_launch</span>
                 </div>
-                <h3 className="font-headline font-bold text-xl text-[#242f41]">3. Launch and optimize</h3>
-                <p className="text-[#515c70] leading-relaxed">We go live, monitor results, and continuously refine to ensure maximum performance.</p>
+                <h3 className="font-headline font-bold text-xl text-[#242f41]">3. Launch and improve</h3>
+                <p className="text-[#515c70] leading-relaxed">We launch your system, track performance, and continue improving it over time.</p>
               </div>
             </ScrollReveal>
           </div>
@@ -253,8 +253,8 @@ export default function ServicesOverview() {
           <div className="max-w-7xl mx-auto rounded-[3rem] bg-inverse-surface text-white p-12 md:p-24 relative overflow-hidden text-center">
             <div className="absolute inset-0 btn-gradient opacity-10"></div>
             <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight"> Let’s Build Your <br className="hidden md:block" /> Growth System</h2>
-              <p className="text-lg text-inverse-on-surface/80">Start your journey with AI-powered systems today. Join the companies scaling with Neuro Works.</p>
+              <h2 className="text-4xl md:text-5xl font-extrabold font-headline leading-tight tracking-tight"> Let's build your <br className="hidden md:block" /> growth system</h2>
+              <p className="text-lg text-inverse-on-surface/80">Start with systems designed to make your business run better and scale faster.</p>
               <div className="pt-8">
                 <button 
                   onClick={() => navigate('/contact')}
