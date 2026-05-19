@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../../assets/logo.png'
 
 export default function Navbar() {
   const location = useLocation();
@@ -32,13 +33,27 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-[rgba(255,255,255,0.7)] backdrop-blur-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-b border-[rgba(255,255,255,0.3)] transition-all duration-300">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
         
-        {/* Dynamic Logo based on page level */}
-        <Link to={logoLink} className="text-xl font-bold tracking-tighter text-[#242f41] font-headline flex items-center gap-1.5 hover:text-[#4647d3] transition-colors">
+
+{/* Dynamic Logo based on page level */}
+        <Link to={logoLink} className="text-xl font-bold tracking-tighter text-[#242f41] font-headline flex items-center gap-2 hover:text-[#4647d3] transition-colors">
           {/* Add a subtle back arrow if we are on a subpage */}
           {logoText !== "Neuro Works AI" && (
             <span className="material-symbols-outlined text-[20px]">arrow_back_ios_new</span>
           )}
-          {logoText}
+          
+          {/* UPDATED LOGO IMAGE HERE */}
+          <div className="flex items-center justify-center w-12 h-12">
+            <img 
+              src={logo}
+              alt="Logo" 
+              // 'scale-150' enlarges the image to ignore the transparent padding
+              // Adjust to scale-125 or scale-110 if it gets too big
+              className="w-full h-full object-contain scale-150 origin-center" 
+            />
+          </div>
+          
+          {/* Text is kept vertically centered next to the logo */}
+          <span className="pt-0.5">{logoText}</span>
         </Link>
         
         <div className="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">
